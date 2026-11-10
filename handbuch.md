@@ -14,7 +14,7 @@ Dieses Handbuch ist das Gedächtnis des Experiments. Jeder geplante Lauf liest e
 ## Regeln (fest, nicht änderbar)
 1. Transparenz: Bio nennt das KI-Experiment. Jeder Post: Instagram `isAiGenerated: true`, TikTok `isAigc: true`. Nie als Mensch auftreten.
 2. Keine Interaktion mit Personen: keine DMs, keine Kommentare – auch nicht unter eigenen Posts.
-3. Veto-Phase **bis einschließlich Mi 25.11.**: jeder Post wird als Entwurf angelegt und frühestens 24 h später freigegeben. Ab Do 26.11. volle Autonomie.
+3. Veto-Phase **bis einschließlich Mi 25.11.**: jeder Post wird als Entwurf angelegt und erst im **nächsten** Daily (ca. 24 h später) freigegeben. Tilman legt ein Veto ein, indem er den Entwurf löscht oder „VETO“ in den Text schreibt. Ab Do 26.11. volle Autonomie.
 4. Im Repo nur: fertige Medien, Werkstatt-Code, diese Dokumente. Keine E-Mail-Adressen, keine privaten Daten.
 5. Fachlich korrekt: jede Tatsachenbehauptung im Video muss stimmen. Im Zweifel recherchieren oder vereinfachen, nie raten.
 
@@ -34,9 +34,9 @@ Dieses Handbuch ist das Gedächtnis des Experiments. Jeder geplante Lauf liest e
 | Ausreißer | ≥ 1 Video > 10.000 Views |
 | Pünktlichkeit | 30/30 Posts, 0 Ketten-Ausfälle |
 
-## Ablauf: Daily (täglich, ca. 19:45)
+## Ablauf: Daily (täglich, 19:42)
 1. **Setup:** Repo per `add_repo` (owner Bareselsoftware, repo bitweise-media, access push) hinzufügen und klonen. `handbuch.md`, `themen.md`, `logbuch.md` lesen. Marke prüfen (s. o.).
-2. **Freigabe (Veto-Phase):** Für jeden Entwurf (draft) der Marke, der laut `logbuch.md` vor ≥ 24 h angelegt wurde:
+2. **Freigabe (Veto-Phase):** Für jeden Entwurf (draft) der Marke, der laut `logbuch.md` in einem **früheren** Lauf (bzw. am Vortag oder früher) angelegt wurde:
    - Post existiert nicht mehr → Veto. Im Logbuch „abgelehnt (gelöscht)“.
    - Text enthält „VETO“ (Groß-/Kleinschreibung egal) → nicht freigeben, Logbuch „abgelehnt“, Begründung übernehmen, falls Tilman eine dazugeschrieben hat.
    - Sonst: per `updateScheduledPost` `draft: false` setzen (alle übrigen Felder unverändert übernehmen, wie von `getScheduledPosts` geliefert). Logbuch „freigegeben“.
@@ -57,7 +57,7 @@ Dieses Handbuch ist das Gedächtnis des Experiments. Jeder geplante Lauf liest e
    4. Optional 1 Lernnotiz, nur wenn sie direkt aus den Daten folgt.
    Bei < 100 Reichweite auf geringe Aussagekraft hinweisen. Keine Websuche im Daily.
 
-## Ablauf: Wochenrecap (montags, ca. 08:40)
+## Ablauf: Wochenrecap (montags, 08:36)
 1. Setup wie Daily.
 2. Daten: letzte 7 Tage vs. 7 Tage davor vs. Gesamtschnitt; Follower-Entwicklung vs. Kurs; beste Zeiten (`getBestTimeToPostByNetwork`); Top/Flop mit vermutetem Grund (Hook, Thema, Länge, Uhrzeit).
 3. Markt (Websuche, nur Quellen der letzten 7 Tage): Formate erfolgreicher deutschsprachiger Tech-Erklär-Shorts ohne Gesicht/mit Text-on-Screen, neue Plattform-Funktionen für kleine Accounts, Themen, die gerade Fragen auslösen.
