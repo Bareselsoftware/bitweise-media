@@ -5,7 +5,7 @@ Dieses Handbuch ist das Gedächtnis des Experiments. Jeder geplante Lauf liest e
 
 ## Eckdaten
 - Account: **bitweise.ki** auf Instagram + TikTok. Betrieben von Claude (KI), Betreuer: Tilman.
-- Zeitraum: **Do 12.11.2026 (Tag 1) – Fr 11.12.2026 (Tag 30)**. Abschlussbericht am 12.12.
+- Zeitraum: **Mi 11.11.2026 (Tag 1) – Do 10.12.2026 (Tag 30)**. Abschlussbericht am 11.12.
 - Metricool: **nur** der Connector `Bitweise_ki_metricool` (Tools `mcp__Bitweise_ki_metricool__*`), Marke **8014302**, Zeitzone Europe/Berlin.
   Vor jedem Schreibzugriff mit `getBrandSettings` prüfen, dass Marke 8014302 / bitweise.ki angezeigt wird.
   Den anderen Metricool-Connector (Marke unstable.cbr) **niemals** verwenden.
@@ -14,7 +14,7 @@ Dieses Handbuch ist das Gedächtnis des Experiments. Jeder geplante Lauf liest e
 ## Regeln (fest, nicht änderbar)
 1. Transparenz: Bio nennt das KI-Experiment. Jeder Post: Instagram `isAiGenerated: true`, TikTok `isAigc: true`. Nie als Mensch auftreten.
 2. Keine Interaktion mit Personen: keine DMs, keine Kommentare – auch nicht unter eigenen Posts.
-3. Veto-Phase **bis einschließlich Mi 25.11.**: jeder Post wird als Entwurf angelegt und erst im **nächsten** Daily (ca. 24 h später) freigegeben. Tilman legt ein Veto ein, indem er den Entwurf löscht oder „VETO“ in den Text schreibt. Ab Do 26.11. volle Autonomie.
+3. Freigabe-Phase **bis einschließlich Di 24.11.** (Tag 1–14): jeder Post wird als Entwurf angelegt, Tilman bekommt eine Push-Nachricht mit Vorschau und gibt ihn mit einem kurzen „okay“ frei. **Ohne Okay wird nichts veröffentlicht.** Ab Mi 25.11. volle Autonomie (Posts direkt geplant, Tilman wird nur informiert).
 4. Im Repo nur: fertige Medien, Werkstatt-Code, diese Dokumente. Keine E-Mail-Adressen, keine privaten Daten.
 5. Fachlich korrekt: jede Tatsachenbehauptung im Video muss stimmen. Im Zweifel recherchieren oder vereinfachen, nie raten.
 
@@ -36,26 +36,31 @@ Dieses Handbuch ist das Gedächtnis des Experiments. Jeder geplante Lauf liest e
 
 ## Ablauf: Daily (täglich, 19:42)
 1. **Setup:** Repo per `add_repo` (owner Bareselsoftware, repo bitweise-media, access push) hinzufügen und klonen. `handbuch.md`, `themen.md`, `logbuch.md` lesen. Marke prüfen (s. o.).
-2. **Freigabe (Veto-Phase):** Für jeden Entwurf (draft) der Marke, der laut `logbuch.md` in einem **früheren** Lauf (bzw. am Vortag oder früher) angelegt wurde:
-   - Post existiert nicht mehr → Veto. Im Logbuch „abgelehnt (gelöscht)“.
-   - Text enthält „VETO“ (Groß-/Kleinschreibung egal) → nicht freigeben, Logbuch „abgelehnt“, Begründung übernehmen, falls Tilman eine dazugeschrieben hat.
-   - Sonst: per `updateScheduledPost` `draft: false` setzen (alle übrigen Felder unverändert übernehmen, wie von `getScheduledPosts` geliefert). Logbuch „freigegeben“.
+2. **Offene Entwürfe prüfen:** Für jeden Entwurf (draft) der Marke laut `logbuch.md`:
+   - Termin liegt in der Vergangenheit → Logbuch „ausgefallen (kein Okay)“, im Bericht mit ⚠️ melden.
+   - Termin liegt in der Zukunft → im Bericht ganz oben erneut um Okay bitten (mit Vorschau-Link).
 3. **Daten:** Kennzahlen aller Posts der letzten 72 h (Views, Reichweite, Ø Watchtime, Skip-Rate IG, Likes, Kommentare, Saves, Shares) und Follower-Stand je Plattform. Mit dem Durchschnitt aller bisherigen Posts vergleichen. Zahlen im Logbuch nachtragen.
 4. **Produktion:**
-   - Veto-Phase (bis 25.11.): Post für **übermorgen** bauen, als Entwurf (`draft: true`, `autoPublish: true`).
-   - Ab 26.11.: Post für **morgen** bauen, direkt geplant (`draft: false`, `autoPublish: true`). Falls für morgen schon einer existiert, nichts doppelt anlegen.
+   - Immer den Post für **morgen** bauen. Falls für morgen schon einer existiert, nichts doppelt anlegen.
+   - Freigabe-Phase (bis 24.11.): als Entwurf anlegen (`draft: true`, `autoPublish: true`).
+   - Ab 25.11.: direkt geplant anlegen (`draft: false`, `autoPublish: true`).
    - Thema: nächstes offenes aus `themen.md`, außer die Daten sprechen klar für eine Anpassung (dann im Bericht begründen). Montags-Posts = KI-Logbuch.
    - Skript `werkstatt/tagNN_thema.py` nach Vorbild `tag01_intro.py` schreiben. **Vor dem Rendern** mit `stills()` Kontaktbogen zeichnen und ansehen (Lesbarkeit, Überlappungen, sichere Zone). Dann `build()`. Länge 15–35 s. `seed` = Tagnummer.
    - Video nach `media/<8 zufällige Hex-Zeichen>-tagNN.mp4`, committen, pushen, URL prüfen (HTTP 200).
    - Post via `createScheduledPost`: providers instagram + tiktok; `instagramData: {type: "REEL", showReelOnFeed: true, isAiGenerated: true}`; `tiktokData: {privacyOption: "PUBLIC_TO_EVERYONE", title: …, isAigc: true, autoAddMusic: false, disableComment/Duet/Stitch: false, commercialContent*: false, photoCoverIndex: 0}`; Uhrzeit laut Rhythmus.
    - Karussell-Tage (Di/Fr ab 17.11.): zusätzlich Folien mit `carousel_slide()` erzeugen, nur providers instagram, `type: "POST"`, `isAiGenerated: true`, 12:30.
 5. **Logbuch** aktualisieren (Zeile pro Post: Datum, Tag, Thema, Datei, Metricool-ID/uuid, Status, Kennzahlen), committen, pushen.
-6. **Bericht an Tilman** (kurz, deutsch):
+6. **Bericht an Tilman** (kurz, deutsch) – kommt als Push-Nachricht auf sein Handy:
+   0. Freigabe-Phase: ganz oben die Freigabe-Anfrage: Thema, Termin, 1-Satz-Inhalt, **Vorschau-Link** (rohe GitHub-URL des Videos) und Planer-Link, dazu „Antworte mit okay zum Freigeben“.
    1. Status – 1 Satz. 🔥 bei Durchbruch (Views/Reichweite ≥ 2× Ø, Saves/Shares ≥ 3× Ø, Skip-Rate IG < 40 %), ⚠️ bei Ausreißer nach unten (≤ 0,5× Ø nach 24 h) oder Ketten-Fehler.
    2. Tabelle der Posts der letzten 72 h + Follower (Δ zu gestern) und Kurs zum 300er-Ziel.
-   3. Heute erledigt: freigegeben / abgelehnt / neu angelegt (Thema, Termin, Veto-Frist, Planer-Link).
+   3. Heute erledigt: neu angelegt / ausgefallen (Thema, Termin, Planer-Link).
    4. Optional 1 Lernnotiz, nur wenn sie direkt aus den Daten folgt.
    Bei < 100 Reichweite auf geringe Aussagekraft hinweisen. Keine Websuche im Daily.
+7. **Antwort von Tilman** (er antwortet in derselben Unterhaltung):
+   - „okay“, „ok“, „passt“, 👍 o. Ä. → Entwurf per `updateScheduledPost` auf `draft: false` setzen (alle übrigen Felder unverändert übernehmen; die ID ändert sich dabei, uuid bleibt). Logbuch „freigegeben“, committen, pushen, kurz bestätigen.
+   - Änderungswunsch → umsetzen, neu rendern, neu hochladen, Entwurf aktualisieren, erneut um Okay bitten.
+   - „nein“/„veto“ → nicht freigeben, Logbuch „abgelehnt“ mit Grund. Wenn bis zum Termin genug Zeit bleibt, ein Ersatzthema anbieten.
 
 ## Ablauf: Wochenrecap (montags, 08:36)
 1. Setup wie Daily.
@@ -71,3 +76,4 @@ Dieses Handbuch ist das Gedächtnis des Experiments. Jeder geplante Lauf liest e
 
 ## Änderungsprotokoll
 - 10.11.2026 – Start-Setup: Konzept, Stil, Kette Metricool ↔ GitHub getestet (Bild + Video, KI-Labels ok).
+- 10.11.2026 – Auf Tilmans Wunsch: Freigabe per Okay-Antwort auf die Push-Nachricht statt 24-h-Veto; Start auf Mi 11.11. vorgezogen (Intro von Tilman bereits freigegeben).
