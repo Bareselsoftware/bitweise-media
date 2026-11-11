@@ -132,9 +132,68 @@ def stills(scenes, outdir, at=0.9):
     c.save(f"{outdir}/kontaktbogen.png")
     return f"{outdir}/kontaktbogen.png"
 
-def audio(total, path, seed=0, typing=()):
-    """Selbst erzeugtes Musikbett (Pad + weicher Puls) + optionale Tipp-Klicks.
-    seed variiert Tonart/Akkordfolge; typing = [(start_s, anzahl, abstand_s), ...]."""
+# ---------------- Stimme (Piper, Thorsten-Voice, MIT) ----------------
+STIMME_DIR = "/home/claude/stimme"
+STIMME = "de_DE-thorsten-high"
+STIMME_URL = "https://huggingface.co/Thorsten-Voice/Piper/resolve/main/"
+_voice = None
+_say_cache = {}
+
+def _ensure_voice():
+    """Lädt piper-tts und das Stimmmodell bei Bedarf (geplante Läufe starten leer)."""
+    global _voice
+    if _voice is not None:
+        return _voice
+    try:
+        import piper  # noqa
+    except ImportError:
+        subprocess.run(["pip", "install", "--break-system-packages", "-q", "piper-tts"], check=True)
+    os.makedirs(STIMME_DIR, exist_ok=True)
+    for ext in (".onnx.json", ".onnx"):
+        f = f"{STIMME_DIR}/{STIMME}{ext}"
+        if not os.path.exists(f) or os.path.getsize(f) < 1000:
+            subprocess.run(["curl", "-sSfL", "-o", f, STIMME_URL + STIMME + ext], check=True)
+    from piper import PiperVoice
+    _voice = PiperVoice.load(f"{STIMME_DIR}/{STIMME}.onnx")
+    return _voice
+
+def say(text, tempo=0.95):
+    """Spricht `text` (Deutsch). Liefert (samples float32 @44,1 kHz, dauer_s). Zahlen ausschreiben!
+    Dauer vorab abfragen, um Szenenlängen passend zu wählen: say("...")[1]"""
+    key = (text, tempo)
+    if key in _say_cache:
+        return _say_cache[key]
+    from piper import SynthesisConfig
+    v = _ensure_voice()
+    chunks = [c.audio_int16_array for c in v.synthesize(text, syn_config=SynthesisConfig(length_scale=tempo))]
+    a = np.concatenate(chunks).astype(np.float32) / 32768.0
+    sr0 = v.config.sample_rate
+    n = int(len(a) * 44100 / sr0)
+    a = np.interp(np.linspace(0, len(a) - 1, n), np.arange(len(a)), a).astype(np.float32)
+    # Stille am Rand kappen
+    idx = np.where(np.abs(a) > 0.01)[0]
+    if len(idx):
+        a = a[max(0, idx[0] - 800): idx[-1] + 2000]
+    _say_cache[key] = (a, len(a) / 44100)
+    return _say_cache[key]
+
+def _voice_track(n, voice):
+    sr = 44100
+    tr = np.zeros(n, dtype=np.float32)
+    for start, text in voice:
+        a, _ = say(text)
+        s0 = int(start * sr)
+        e = min(n, s0 + len(a))
+        if s0 < n:
+            tr[s0:e] += a[: e - s0]
+        if s0 + len(a) > n:
+            print(f"WARNUNG: Sprechtext läuft über das Videoende: {text!r}")
+    return tr
+
+def audio(total, path, seed=0, typing=(), voice=()):
+    """Selbst erzeugtes Musikbett (Pad + weicher Puls) + optionale Tipp-Klicks + optionale Stimme.
+    seed variiert Tonart/Akkordfolge; typing = [(start_s, anzahl, abstand_s), ...];
+    voice = [(start_s, "Sprechtext"), ...] – Musik wird unter der Stimme automatisch leiser."""
     sr = 44100
     n = int(total * sr); t = np.arange(n) / sr; out = np.zeros(n)
     rng = np.random.default_rng(seed + 1)
@@ -172,17 +231,28 @@ def audio(total, path, seed=0, typing=()):
                 out[s0:s0 + L] += 0.12 * rng.standard_normal(L) * np.exp(-np.arange(L) / sr * 220)
     out *= np.clip((total - t) / 1.2, 0, 1)
     out = np.tanh(out * 1.4); out /= np.max(np.abs(out)) / 0.6
+    if voice:
+        vt = _voice_track(n, voice)
+        # Ducking: Hüllkurve der Stimme (geglättet) senkt die Musik auf ~30 %
+        env = np.abs(vt)
+        k = int(0.25 * sr)
+        env = np.convolve(env, np.ones(k) / k, mode="same")
+        env = np.clip(env / (env.max() * 0.25 + 1e-9), 0, 1)
+        out = out * (1 - 0.7 * env) * 0.85
+        vt = vt / (np.max(np.abs(vt)) + 1e-9) * 0.9
+        out = out + vt
+        out /= max(1.0, np.max(np.abs(out)) / 0.95)
     with wave.open(path, "wb") as w:
         w.setnchannels(2); w.setsampwidth(2); w.setframerate(sr)
         w.writeframes((np.stack([out, out], 1) * 32767).astype(np.int16).tobytes())
 
-def build(scenes, name, outdir="/home/claude/bitweise-out", seed=0, typing=()):
-    """Rendert alle Szenen, Audio, fügt zusammen. Ergebnis: {outdir}/{name}.mp4"""
+def build(scenes, name, outdir="/home/claude/bitweise-out", seed=0, typing=(), voice=()):
+    """Rendert alle Szenen, Audio (+ Stimme), fügt zusammen. Ergebnis: {outdir}/{name}.mp4"""
     os.makedirs(outdir, exist_ok=True)
     total = sum(d for _, _, d in scenes)
     for i, (sn, fn, dur) in enumerate(scenes):
         render_scene(outdir, f"{name}_{sn}", fn, dur, 0 if i == 0 else 0.2, 0 if i == len(scenes) - 1 else 0.2)
-    audio(total, f"{outdir}/{name}.wav", seed, typing)
+    audio(total, f"{outdir}/{name}.wav", seed, typing, voice)
     lst = f"{outdir}/{name}_list.txt"
     with open(lst, "w") as fh:
         for sn, _, _ in scenes:

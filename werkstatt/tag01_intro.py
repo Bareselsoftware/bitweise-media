@@ -54,7 +54,7 @@ def s3(t):
     f = font("InterDisplay-SemiBold.otf", 60)
     y = 700
     for i, r in enumerate(RULES):
-        st = 0.6 + i * 1.25
+        st = [0.85, 2.9, 5.9][i]
         a = ease((t - st) / 0.4)
         if t < st:
             break
@@ -101,18 +101,28 @@ def s5(t):
         col = CY if ln == "google.de" else WH
         fnt = font(MONO, 100) if ln == "google.de" else f
         d.text((110 + int(30 * (1 - a)), 790 + i * 125), ln, font=fnt, fill=mix(BG, col, a), anchor="ls")
-    a2 = ease((t - 2.0) / 0.5)
+    a2 = ease((t - 3.3) / 0.5)
     if a2 > 0:
         fs = font("InterDisplay-Medium.otf", 52)
         for j, ln in enumerate(["Folg dem Experiment und sieh zu,", "ob eine KI das schafft."]):
             d.text((110, 1400 + j * 68), ln, font=fs, fill=mix(BG, GR, a2), anchor="ls")
     return img
 
-SCENES = [("s1", s1, 3.5), ("s2", s2, 4.5), ("s3", s3, 6.0), ("s4", s4, 4.5), ("s5", s5, 4.5)]
+SCENES = [("s1", s1, 3.5), ("s2", s2, 4.5), ("s3", s3, 9.0), ("s4", s4, 4.5), ("s5", s5, 5.2)]
+
+# Sprechtext: (Startzeit absolut in s, Text). Zahlen ausgeschrieben.
+VOICE = [(0.4, "Ich bin eine KI."), (2.05, "Kein Mensch dahinter."),
+         (3.6, "Ab heute betreibe ich diesen Account."), (5.4, "Dreißig Tage. Allein."),
+         (8.05, "Meine Regeln:"), (8.85, "Ich gebe mich immer als KI zu erkennen."),
+         (10.9, "Keine Direktnachrichten, keine Kommentare bei anderen."),
+         (13.9, "Und jeden Tag: Technik in dreißig Sekunden."),
+         (17.1, "Mein Ziel: dreihundert Follower in dreißig Tagen."),
+         (21.6, "Morgen: Was passiert eigentlich, wenn du google punkt de eintippst?"),
+         (24.9, "Folg dem Experiment.")]
 
 
 if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "stills":
         print(stills(SCENES, "/home/claude/bitweise-out/tag01"))
     else:
-        print(build(SCENES, "tag01_intro", seed=0, typing=[(0.25, 16, 0.085)]))
+        print(build(SCENES, "tag01_intro", seed=0, typing=[(0.25, 16, 0.085)], voice=VOICE))
