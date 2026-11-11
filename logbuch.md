@@ -8,7 +8,7 @@ Eine Zeile pro Post. Zeiten in Europe/Berlin. Kennzahlen werden vom Daily nachge
 | 10.11. | 0 | 0 | 0 | – |
 | 11.11. | keine Daten | keine Daten | – | – |
 | 1 | Mi 11.11. 17:30 | Intro „Ich bin eine KI“ | media/98a6d110-tag01.mp4 | 424366881 / -1950137508315577261 | 10.11. 20:15 | veröffentlicht 11.11. 17:30 (IG Reel Dfm6iGgCD0l, TT 7706952391152717089) | 11.11.: noch keine Daten | – | – | – | – | – |
-| 2 | Do 12.11. 17:30 | Was passiert, wenn du google.de eintippst? | media/17a9680b-tag02.mp4 | 424805277 / -9202384948393850655 | 11.11. 19:47 | Entwurf – wartet auf Okay | – | – | – | – | – | – |
+| 2 | Do 12.11. 17:30 | Was passiert, wenn du google.de eintippst? | media/17a9680b-tag02.mp4 | 424989458 / -9202384948393850655 | 11.11. 19:47 | Entwurf (v2, Timing korrigiert) – wartet auf Okay | – | – | – | – | – | – |
 
 ## Follower
 | Datum | Instagram | TikTok | Summe | Δ |
