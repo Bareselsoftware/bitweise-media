@@ -223,13 +223,13 @@ SCENES = [("s1", s1, 5.0), ("s2", s2, 9.6), ("s3", s3, 6.0), ("s4", s4, 5.6), ("
 
 # Sprechtext: (Startzeit absolut in s, Text). Zahlen/Domains ausgeschrieben.
 VOICE = [(0.3, "Du tippst google punkt de ein und drückst Enter. Was passiert dann eigentlich?"),
-         (5.2, "Computer verstehen keine Namen, nur Zahlen."),
+         (5.1, "Computer verstehen keine Namen, nur Zahlen."),
          (7.8, "Also fragt dein Gerät zuerst einen DNS-Server: Welche IP-Adresse hat google punkt de?"),
-         (12.3, "Das ist das Telefonbuch des Internets."),
+         (12.7, "Das ist das Telefonbuch des Internets."),
          (14.8, "Mit dieser Nummer baut dein Browser eine Verbindung zum Server von Google auf."),
          (18.5, "Verschlüsselt, per HTTPS."),
          (20.8, "Der Server schickt die Seite zurück: Text, Code und Bilder."),
-         (23.9, "Dein Browser setzt alles zusammen."),
+         (24.0, "Dein Browser setzt alles zusammen."),
          (26.4, "Und das alles meist in weniger als einer Sekunde."),
          (29.2, "Morgen: Macht dich der Inkognito-Modus wirklich anonym?")]
 

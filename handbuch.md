@@ -46,7 +46,7 @@ Dieses Handbuch ist das Gedächtnis des Experiments. Jeder geplante Lauf liest e
    - Freigabe-Phase (bis 24.11.): als Entwurf anlegen (`draft: true`, `autoPublish: true`).
    - Ab 25.11.: direkt geplant anlegen (`draft: false`, `autoPublish: true`).
    - Thema: nächstes offenes aus `themen.md`, außer die Daten sprechen klar für eine Anpassung (dann im Bericht begründen). Montags-Posts = KI-Logbuch.
-   - **Stimme:** Jedes Video bekommt Sprechtext (Thorsten-Stimme via `say()`/`build(voice=…)`, Lizenz in `werkstatt/STIMME-LIZENZ.md`). Zahlen, Abkürzungen und Domains ausschreiben („dreißig“, „google punkt de“). Erst mit `say(text)[1]` die Sprechdauern messen, dann Szenenlängen und Einblendzeiten darauf abstimmen (Text erscheint, wenn er gesprochen wird). Bei Warnung „läuft über das Videoende“ Szenen verlängern. Bild-Text und Sprechtext dürfen leicht abweichen, sollen inhaltlich aber übereinstimmen.
+   - **Stimme:** Jedes Video bekommt Sprechtext (Thorsten-Stimme via `say()`/`build(voice=…)`, Lizenz in `werkstatt/STIMME-LIZENZ.md`). Zahlen, Abkürzungen und Domains ausschreiben („dreißig“, „google punkt de“). Erst mit `say(text)[1]` die Sprechdauern messen, dann Szenenlängen und Einblendzeiten darauf abstimmen (Text erscheint, wenn er gesprochen wird). `build()` bricht ab, wenn Sprechtexte sich überlappen (< 0,12 s Pause) oder übers Ende laufen – dann Startzeiten bzw. Szenen anpassen, nicht die Prüfung umgehen. Bild-Text und Sprechtext dürfen leicht abweichen, sollen inhaltlich aber übereinstimmen.
    - Skript `werkstatt/tagNN_thema.py` nach Vorbild `tag01_intro.py` schreiben. **Vor dem Rendern** mit `stills()` Kontaktbogen zeichnen und ansehen (Lesbarkeit, Überlappungen, sichere Zone). Dann `build()`. Länge 15–35 s. `seed` = Tagnummer.
    - Video nach `media/<8 zufällige Hex-Zeichen>-tagNN.mp4`, committen, pushen, URL prüfen (HTTP 200).
    - Post via `createScheduledPost`: providers instagram + tiktok; `instagramData: {type: "REEL", showReelOnFeed: true, isAiGenerated: true}`; `tiktokData: {privacyOption: "PUBLIC_TO_EVERYONE", title: …, isAigc: true, autoAddMusic: false, disableComment/Duet/Stitch: false, commercialContent*: false, photoCoverIndex: 0}`; Uhrzeit laut Rhythmus.
@@ -78,6 +78,7 @@ Dieses Handbuch ist das Gedächtnis des Experiments. Jeder geplante Lauf liest e
 
 ## Änderungsprotokoll
 - 10.11.2026 – Start-Setup: Konzept, Stil, Kette Metricool ↔ GitHub getestet (Bild + Video, KI-Labels ok).
+- 11.11.2026 – Tag 02: überlappende Sprechtexte (Tilman bemerkt) → automatische Timing-Prüfung in `build()`.
 - 11.11.2026 – Metricool-Free-Limit (20/Monat pro Netzwerk) erkannt; Lösung in Klärung, Karussells ausgesetzt.
 - 11.11.2026 – Sprachausgabe eingeführt (Thorsten-Voice, Piper, MIT); Ton = Stimme + leises Musikbett.
 - 10.11.2026 – Auf Tilmans Wunsch: Freigabe per Okay-Antwort auf die Push-Nachricht statt 24-h-Veto; Start auf Mi 11.11. vorgezogen (Intro von Tilman bereits freigegeben).

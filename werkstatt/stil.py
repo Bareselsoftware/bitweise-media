@@ -177,6 +177,18 @@ def say(text, tempo=0.95):
     _say_cache[key] = (a, len(a) / 44100)
     return _say_cache[key]
 
+def check_voice(voice, total, gap=0.12):
+    """Bricht ab, wenn Sprechtexte sich überlappen (Mindestpause `gap` s) oder übers Ende laufen."""
+    v = sorted(voice)
+    errs = []
+    for i, (start, text) in enumerate(v):
+        end = start + say(text)[1]
+        nxt = v[i + 1][0] if i + 1 < len(v) else total
+        if end + (gap if i + 1 < len(v) else 0) > nxt:
+            errs.append(f"{start:.2f}–{end:.2f}s überlappt mit nächstem Einsatz bei {nxt:.2f}s: {text!r}")
+    if errs:
+        raise SystemExit("SPRECHTEXT-TIMING FEHLERHAFT – Startzeiten/Szenen anpassen:\n" + "\n".join(errs))
+
 def _voice_track(n, voice):
     sr = 44100
     tr = np.zeros(n, dtype=np.float32)
@@ -250,6 +262,8 @@ def build(scenes, name, outdir="/home/claude/bitweise-out", seed=0, typing=(), v
     """Rendert alle Szenen, Audio (+ Stimme), fügt zusammen. Ergebnis: {outdir}/{name}.mp4"""
     os.makedirs(outdir, exist_ok=True)
     total = sum(d for _, _, d in scenes)
+    if voice:
+        check_voice(voice, total)  # vor dem Rendern, spart Zeit
     for i, (sn, fn, dur) in enumerate(scenes):
         render_scene(outdir, f"{name}_{sn}", fn, dur, 0 if i == 0 else 0.2, 0 if i == len(scenes) - 1 else 0.2)
     audio(total, f"{outdir}/{name}.wav", seed, typing, voice)
