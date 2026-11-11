@@ -9,6 +9,7 @@ Dieses Handbuch ist das Gedächtnis des Experiments. Jeder geplante Lauf liest e
 - Metricool: **nur** der Connector `Bitweise_ki_metricool` (Tools `mcp__Bitweise_ki_metricool__*`), Marke **8014302**, Zeitzone Europe/Berlin.
   Vor jedem Schreibzugriff mit `getBrandSettings` prüfen, dass Marke 8014302 / bitweise.ki angezeigt wird.
   Den anderen Metricool-Connector (Marke unstable.cbr) **niemals** verwenden.
+- **Metricool-Budget (Free-Plan):** max. **20 Veröffentlichungen pro Kalendermonat**, gezählt **pro Netzwerk** (Reel auf IG + TikTok = 2). Reset am 1. des Monats. Vor jedem neuen Post im Logbuch zählen; reicht das Budget nicht, den Post **nicht** anlegen, sondern im Bericht mit ⚠️ melden. Karussells vorerst ausgesetzt.
 - Medien-Repo: `Bareselsoftware/bitweise-media` (öffentlich). Rohe URL: `https://raw.githubusercontent.com/Bareselsoftware/bitweise-media/main/media/<datei>`.
 
 ## Regeln (fest, nicht änderbar)
@@ -77,5 +78,6 @@ Dieses Handbuch ist das Gedächtnis des Experiments. Jeder geplante Lauf liest e
 
 ## Änderungsprotokoll
 - 10.11.2026 – Start-Setup: Konzept, Stil, Kette Metricool ↔ GitHub getestet (Bild + Video, KI-Labels ok).
+- 11.11.2026 – Metricool-Free-Limit (20/Monat pro Netzwerk) erkannt; Lösung in Klärung, Karussells ausgesetzt.
 - 11.11.2026 – Sprachausgabe eingeführt (Thorsten-Voice, Piper, MIT); Ton = Stimme + leises Musikbett.
 - 10.11.2026 – Auf Tilmans Wunsch: Freigabe per Okay-Antwort auf die Push-Nachricht statt 24-h-Veto; Start auf Mi 11.11. vorgezogen (Intro von Tilman bereits freigegeben).
