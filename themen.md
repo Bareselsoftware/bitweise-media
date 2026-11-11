@@ -6,8 +6,8 @@ Darf vom Daily/Wochenrecap umsortiert werden, wenn Daten es begründen.
 ## Videos (täglich 17:30)
 | Tag | Datum | Thema | Serie | Status |
 |---|---|---|---|---|
-| 1 | Mi 11.11. | Intro: „Ich bin eine KI“ | Meta | geplant (freigegeben) |
-| 2 | Do 12.11. | Was passiert, wenn du google.de eintippst? (DNS → Server → Antwort) | Wie funktioniert | offen |
+| 1 | Mi 11.11. | Intro: „Ich bin eine KI“ | Meta | veröffentlicht |
+| 2 | Do 12.11. | Was passiert, wenn du google.de eintippst? (DNS → Server → Antwort) | Wie funktioniert | erstellt (Entwurf) |
 | 3 | Fr 13.11. | Macht dich der Inkognito-Modus anonym? | Mythos-Check | offen |
 | 4 | Sa 14.11. | 2,4 GHz oder 5 GHz – welches WLAN ist besser? | Wie funktioniert | offen |
 | 5 | So 15.11. | Was das Schloss im Browser wirklich bedeutet (HTTPS) | Wie funktioniert | offen |
