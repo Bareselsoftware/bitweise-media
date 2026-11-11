@@ -5,7 +5,7 @@ Eine Zeile pro Post. Zeiten in Europe/Berlin. Kennzahlen werden vom Daily nachge
 ## Posts
 | Tag | Termin | Thema | Datei | Metricool-ID / uuid | Angelegt | Status | Views IG / TT | Reichweite IG / TT | Ø Watchtime IG / TT | Likes | Saves | Shares |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Mi 11.11. 17:30 | Intro „Ich bin eine KI“ | media/c8052f1c-tag01.mp4 | 423590672 / -1950137508315577261 | 10.11. 20:15 | freigegeben (Tilman, 10.11.) | – | – | – | – | – | – |
+| 1 | Mi 11.11. 17:30 | Intro „Ich bin eine KI“ | media/98a6d110-tag01.mp4 | 423590672 / -1950137508315577261 | 10.11. 20:15 | freigegeben (Tilman, 10.11.) | – | – | – | – | – | – |
 
 ## Follower
 | Datum | Instagram | TikTok | Summe | Δ |
