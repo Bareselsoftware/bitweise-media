@@ -163,8 +163,8 @@ def say(text, tempo=0.95):
     key = (text, tempo)
     if key in _say_cache:
         return _say_cache[key]
-    from piper import SynthesisConfig
     v = _ensure_voice()
+    from piper import SynthesisConfig
     chunks = [c.audio_int16_array for c in v.synthesize(text, syn_config=SynthesisConfig(length_scale=tempo))]
     a = np.concatenate(chunks).astype(np.float32) / 32768.0
     sr0 = v.config.sample_rate
