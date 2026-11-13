@@ -8,7 +8,7 @@ Eine Zeile pro Post. Zeiten in Europe/Berlin. Kennzahlen werden vom Daily nachge
 | 1 | Mi 11.11. 17:30 | Intro „Ich bin eine KI“ | media/98a6d110-tag01.mp4 | 424366881 / -1950137508315577261 | 10.11. 20:15 | veröffentlicht 11.11. 17:30 (IG Reel Dfm6iGgCD0l, TT 7706952391152717089) | 20 / 645 | 20 / 563 | 4,0 s / 3 s | 0 / 10 | 0 / – | 0 / 0 |
 | 2 | Do 12.11. 17:30 | Was passiert, wenn du google.de eintippst? | media/17a9680b-tag02.mp4 | 424990910 / -9202384948393850655 | 11.11. 19:47 | veröffentlicht 12.11. 17:30 (IG Reel DfpfUVBjbSv, TT 7707323673958485281) | 99 / 594 | 89 / – | 4,3 s / 6 s | 0 / 5 | 0 / – | 0 / 0 |
 | 3 | Fr 13.11. 17:30 | Mythos-Check: Macht dich der Inkognito-Modus anonym? | media/9457723c-tag03.mp4 | 426119180 / -330861876428128200 | 12.11. 19:47 | veröffentlicht 13.11. 17:30 (IG Reel DfsEHMKEzXB, TT 7707694370115390752) | 13.11.: noch keine Daten | – | – | – | – | – |
-| 4 | Sa 14.11. 17:30 | 2,4 oder 5 GHz – welches WLAN ist besser? | media/f8a22078-tag04.mp4 | 427328989 / 8077901914264192266 | 13.11. 19:46 | Entwurf, wartet auf Okay | – | – | – | – | – | – |
+| 4 | Sa 14.11. 17:30 | 2,4 oder 5 GHz – welches WLAN ist besser? | media/f8a22078-tag04.mp4 | 427331328 / 8077901914264192266 | 13.11. 19:46 | freigegeben (Tilman, 13.11. 19:48) | – | – | – | – | – | – |
 
 ## Follower
 | Datum | Instagram | TikTok | Summe | Δ |
