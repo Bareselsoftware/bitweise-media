@@ -9,7 +9,7 @@ Eine Zeile pro Post. Zeiten in Europe/Berlin. Kennzahlen werden vom Daily nachge
 | 2 | Do 12.11. 17:30 | Was passiert, wenn du google.de eintippst? | media/17a9680b-tag02.mp4 | 424990910 / -9202384948393850655 | 11.11. 19:47 | veröffentlicht 12.11. 17:30 (IG Reel DfpfUVBjbSv, TT 7707323673958485281) | 111 / 594 | 100 / – | 4,0 s / 6 s | 0 / 5 | 0 / – | 0 / 0 |
 | 3 | Fr 13.11. 17:30 | Mythos-Check: Macht dich der Inkognito-Modus anonym? | media/9457723c-tag03.mp4 | 426119180 / -330861876428128200 | 12.11. 19:47 | veröffentlicht 13.11. 17:30 (IG Reel DfsEHMKEzXB, TT 7707694370115390752) | 14 / k. A. | 14 / – | 2,5 s / – | 0 / – | 0 / – | 0 / – |
 | 4 | Sa 14.11. 17:30 | 2,4 oder 5 GHz – welches WLAN ist besser? | media/f8a22078-tag04.mp4 | 427331328 / 8077901914264192266 | 13.11. 19:46 | veröffentlicht 14.11. 17:30 (IG Reel DfupG1opT_K, TT 7708065689214504225) | 14.11.: noch keine Daten | – | – | – | – | – |
-| 5 | So 15.11. 17:30 | Was das Schloss im Browser wirklich bedeutet (HTTPS) | media/9a76ca4a-tag05.mp4 | 428258607 / 4443588904072268634 | 14.11. 19:49 | Entwurf – wartet auf Okay | – | – | – | – | – | – |
+| 5 | So 15.11. 17:30 | Was das Schloss im Browser wirklich bedeutet (HTTPS) | media/9a76ca4a-tag05.mp4 | 428260724 / 4443588904072268634 | 14.11. 19:49 | freigegeben (Tilman, 14.11. 19:52) | – | – | – | – | – | – |
 
 ## Follower
 | Datum | Instagram | TikTok | Summe | Δ |
