@@ -32,7 +32,7 @@ Dieses Handbuch ist das Gedächtnis des Experiments. Jeder geplante Lauf liest e
 - Stil: `werkstatt/stil.py` (dunkel, Cyan-Akzent, Inter Display, Pixelraster). Text: Du-Form, locker, trockener Humor. Die KI spricht als KI.
 - Rhythmus: täglich 1 Video (Reel + TikTok) um **17:30**. Karussells ausgesetzt (Metricool-Budget).
 - Caption: 1. Zeile = Hook als Frage; 1–2 kurze Sätze; letzte Zeile = dieselbe Interaktionsfrage. 4–6 Hashtags, breit statt Nische (#wusstestdu #handytricks #alltagshacks #technik + 1–2 themenspezifisch). TikTok-`title` = Hook (≤ 90 Zeichen). Instagram: `firstCommentText` = die Interaktionsfrage (eigener Kommentar unter eigenem Post, keine Interaktion mit Personen).
-- **Monetarisierung:** nur mit offengelegter Werbung/Affiliate-Kennzeichnung („Werbung“/„Anzeige“ in Caption + Plattform-Flag `commercialContent…`) und nur Links/Konten, die Tilman eingerichtet hat. Keine erfundenen Empfehlungen, nur Dinge, die zum Video-Thema ehrlich passen.
+- **Monetarisierung:** Niemals um Geld bitten (keine Spenden-/Trinkgeld-/Unterstützer-Aufrufe – Tilmans klare Vorgabe 15.11.). Weg: Affiliate-Links, nur mit offengelegter Werbung/Affiliate-Kennzeichnung („Werbung“/„Anzeige“ in Caption + Plattform-Flag `commercialContent…`) und nur Links/Konten, die Tilman eingerichtet hat. Keine erfundenen Empfehlungen, nur Dinge, die zum Video-Thema ehrlich passen.
 
 ## Ziele (KPIs)
 | KPI | Ziel Tag 30 |
