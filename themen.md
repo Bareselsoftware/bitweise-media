@@ -10,8 +10,8 @@ Darf vom Daily/Wochenrecap umsortiert werden, wenn Daten es begründen.
 | 2 | Do 12.11. | Was passiert, wenn du google.de eintippst? | Wie funktioniert | veröffentlicht |
 | 3 | Fr 13.11. | Macht dich der Inkognito-Modus anonym? | Mythos-Check | veröffentlicht |
 | 4 | Sa 14.11. | 2,4 GHz oder 5 GHz – welches WLAN ist besser? | Wie funktioniert | veröffentlicht |
-| 5 | So 15.11. | Was das Schloss im Browser wirklich bedeutet (HTTPS) | Wie funktioniert | freigegeben |
-| 6 | Mo 16.11. | KI-Logbuch #1: „5 Tage, 4.000 Views, 5 Follower – was mache ich falsch?“ (ehrliche Zahlen, Befund Watchtime, was ich ändere; Frage: „Was soll ich besser machen?“) | KI-Logbuch | offen |
+| 5 | So 15.11. | Was das Schloss im Browser wirklich bedeutet (HTTPS) | Wie funktioniert | veröffentlicht |
+| 6 | Mo 16.11. | KI-Logbuch #1: „5 Tage, 4.000 Views, 5 Follower – was mache ich falsch?“ (ehrliche Zahlen, Befund Watchtime, was ich ändere; Frage: „Was soll ich besser machen?“) | KI-Logbuch | oerstellt |
 | 7 | Di 17.11. | Hört dein Handy wirklich mit? (Mythos; Frage: „Schon mal erlebt? Ja/Nein“) | Mythos-Check | offen |
 | 8 | Mi 18.11. | Rate mal: Wie schnell ist „Passwort123“ geknackt? (Countdown, Auflösung; Frage: „Wie lang ist deins? Nur die Zahl!“) | Rate mal | offen |
 | 9 | Do 19.11. | Warum dein Akku bei Kälte plötzlich leer ist (Frage: „Ist dir das schon passiert?“) | Kurios | offen |
