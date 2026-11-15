@@ -19,13 +19,20 @@ Dieses Handbuch ist das Gedächtnis des Experiments. Jeder geplante Lauf liest e
 4. Im Repo nur: fertige Medien, Werkstatt-Code, diese Dokumente. Keine E-Mail-Adressen, keine privaten Daten.
 5. Fachlich korrekt: jede Tatsachenbehauptung im Video muss stimmen. Im Zweifel recherchieren oder vereinfachen, nie raten.
 
-## Konzept
-- Nische: Technik im Alltag in 15–35 s erklärt (Internet, WLAN, Smartphone, Datenschutz-Mythen). Deutsch.
-- Serien: „Wie funktioniert …?“ · „MYTHOS-CHECK“ (Label oben rechts, Rot = falsch, Grün = richtig) · montags „KI-LOGBUCH“ mit echten Zahlen.
-- Stil: `werkstatt/stil.py` (dunkel, Cyan-Akzent, Inter Display, Pixelraster). Aufbau: Hook in den ersten 1,5 s (Frage oder Behauptung), 3 Erklärschritte mit einfachen animierten Diagrammen, Schlusssatz/Ausblick.
-- Text: Du-Form, sachlich, trockener Humor. Die KI spricht als KI („Ich habe nachgeschlagen …“).
-- Rhythmus: täglich 1 Video (Reel + TikTok, gleiches Video) um **17:30**. Ab Di 17.11. zusätzlich IG-Karussell **Di + Fr um 12:30** (1080×1350, 5–7 Folien).
-- Caption: 2–4 kurze Absätze, endet mit Ausblick oder Frage, 4–6 Hashtags (#technik #wissen + themenspezifisch). TikTok-`title` ist Pflicht (kurzer Hook, ≤ 90 Zeichen).
+## Konzept (Format v2 ab Tag 6 – Tilmans Vorgabe 15.11.: allgemeiner, mehr Interaktion)
+**Befund Tag 1–4 (TikTok):** 600–980 Views je Video, fast nur For-You. Aber Ø Watchtime 4–9 s bei 26–34 s Länge, Komplett-Quote ≈ 0 %, IG-Skip-Rate 66–86 %. → Die Leute wischen in den ersten Sekunden weg. Ohne Zuschauen keine Interaktion und keine Follows.
+
+- **Themen allgemein & alltagsnah:** Dinge, die jeder mit Handy erlebt (Akku, WLAN, Fake-SMS, „hört mein Handy mit?“, Black Friday). Keine Fachbegriffe im Hook. Fachwörter nur, wenn sie sofort erklärt werden.
+- **Länge 12–20 s** (hart: max. 22 s). Lieber ein Gedanke pro Video als drei Schritte.
+- **Hook in Sekunde 0:** Erster Frame zeigt sofort die Hook-Zeile groß (kein Tipp-Effekt, kein Logo-Intro), Stimme setzt bei 0,1 s ein. Hook = Behauptung/Frage mit Spannung („Dein Handy hört mit. Oder?“), nicht „Heute erkläre ich …“.
+- **Tempo:** alle 2–3 s neues Bild-Element. Sprechtempo `say(text, tempo=0.88)`.
+- **Schluss = Interaktionsfrage**, mit 1 Wort oder Emoji beantwortbar („Team 2,4 oder Team 5? Schreib’s in die Kommentare.“, „Schon mal passiert? Ja oder nein.“). Bei Listen/Tipps: „Speicher dir das“. Bei Fehlern, die andere machen: „Schick das jemandem, der …“.
+- **Follow-Grund:** Serien mit Teilen („Teil 1 von 2 – Teil 2 morgen“) wo sinnvoll; Hinweis im Bild am Ende „Folgen = morgen schlauer“ (kurz, max. 1 s).
+- **Formate:** MYTHOS-CHECK (Rot falsch/Grün richtig) · RATE MAL (Frage, 3 s Pause zum Raten mit Countdown, Auflösung) · ALLTAGS-TRICK · KURIOS („Warum …?“) · montags KI-LOGBUCH (die KI berichtet offen über ihr Experiment – Zahlen, Fehler, was sie ändert; das Experiment selbst ist ein Hook).
+- Stil: `werkstatt/stil.py` (dunkel, Cyan-Akzent, Inter Display, Pixelraster). Text: Du-Form, locker, trockener Humor. Die KI spricht als KI.
+- Rhythmus: täglich 1 Video (Reel + TikTok) um **17:30**. Karussells ausgesetzt (Metricool-Budget).
+- Caption: 1. Zeile = Hook als Frage; 1–2 kurze Sätze; letzte Zeile = dieselbe Interaktionsfrage. 4–6 Hashtags, breit statt Nische (#wusstestdu #handytricks #alltagshacks #technik + 1–2 themenspezifisch). TikTok-`title` = Hook (≤ 90 Zeichen). Instagram: `firstCommentText` = die Interaktionsfrage (eigener Kommentar unter eigenem Post, keine Interaktion mit Personen).
+- **Monetarisierung:** nur mit offengelegter Werbung/Affiliate-Kennzeichnung („Werbung“/„Anzeige“ in Caption + Plattform-Flag `commercialContent…`) und nur Links/Konten, die Tilman eingerichtet hat. Keine erfundenen Empfehlungen, nur Dinge, die zum Video-Thema ehrlich passen.
 
 ## Ziele (KPIs)
 | KPI | Ziel Tag 30 |
@@ -45,9 +52,9 @@ Dieses Handbuch ist das Gedächtnis des Experiments. Jeder geplante Lauf liest e
    - Immer den Post für **morgen** bauen. Falls für morgen schon einer existiert, nichts doppelt anlegen.
    - Freigabe-Phase (bis 24.11.): als Entwurf anlegen (`draft: true`, `autoPublish: true`).
    - Ab 25.11.: direkt geplant anlegen (`draft: false`, `autoPublish: true`).
-   - Thema: nächstes offenes aus `themen.md`, außer die Daten sprechen klar für eine Anpassung (dann im Bericht begründen). Montags-Posts = KI-Logbuch.
+   - Thema: nächstes offenes aus `themen.md`, außer die Daten sprechen klar für eine Anpassung (dann im Bericht begründen). Montags-Posts = KI-Logbuch. Themen müssen Format v2 erfüllen – bei alten Ideen Hook und Schluss entsprechend umbauen.
    - **Stimme:** Jedes Video bekommt Sprechtext (Thorsten-Stimme via `say()`/`build(voice=…)`, Lizenz in `werkstatt/STIMME-LIZENZ.md`). Zahlen, Abkürzungen und Domains ausschreiben („dreißig“, „google punkt de“). Erst mit `say(text)[1]` die Sprechdauern messen, dann Szenenlängen und Einblendzeiten darauf abstimmen (Text erscheint, wenn er gesprochen wird). `build()` bricht ab, wenn Sprechtexte sich überlappen (< 0,12 s Pause) oder übers Ende laufen – dann Startzeiten bzw. Szenen anpassen, nicht die Prüfung umgehen. Bild-Text und Sprechtext dürfen leicht abweichen, sollen inhaltlich aber übereinstimmen.
-   - Skript `werkstatt/tagNN_thema.py` nach Vorbild `tag01_intro.py` schreiben. **Vor dem Rendern** mit `stills()` Kontaktbogen zeichnen und ansehen (Lesbarkeit, Überlappungen, sichere Zone). Dann `build()`. Länge 15–35 s. `seed` = Tagnummer.
+   - Skript `werkstatt/tagNN_thema.py` nach Vorbild `tag01_intro.py` schreiben. **Vor dem Rendern** mit `stills()` Kontaktbogen zeichnen und ansehen (Lesbarkeit, Überlappungen, sichere Zone). Dann `build()`. Länge 12–20 s (Format v2). `seed` = Tagnummer.
    - Video nach `media/<8 zufällige Hex-Zeichen>-tagNN.mp4`, committen, pushen, URL prüfen (HTTP 200).
    - Post via `createScheduledPost`: providers instagram + tiktok; `instagramData: {type: "REEL", showReelOnFeed: true, isAiGenerated: true}`; `tiktokData: {privacyOption: "PUBLIC_TO_EVERYONE", title: …, isAigc: true, autoAddMusic: false, disableComment/Duet/Stitch: false, commercialContent*: false, photoCoverIndex: 0}`; Uhrzeit laut Rhythmus.
    - Karussell-Tage (Di/Fr ab 17.11.): zusätzlich Folien mit `carousel_slide()` erzeugen, nur providers instagram, `type: "POST"`, `isAiGenerated: true`, 12:30.
@@ -78,6 +85,7 @@ Dieses Handbuch ist das Gedächtnis des Experiments. Jeder geplante Lauf liest e
 
 ## Änderungsprotokoll
 - 10.11.2026 – Start-Setup: Konzept, Stil, Kette Metricool ↔ GitHub getestet (Bild + Video, KI-Labels ok).
+- 15.11.2026 – Tilmans Vorgabe: allgemeiner + mehr Interaktion; Ziel 20 € Umsatz → Metricool-Bezahlplan. Format v2 (12–20 s, Hook in Sek. 0, Interaktionsfrage am Ende, breite Themen), Themenplan ab Tag 6 neu.
 - 11.11.2026 – Tag 02: überlappende Sprechtexte (Tilman bemerkt) → automatische Timing-Prüfung in `build()`.
 - 11.11.2026 – Metricool-Free-Limit (20/Monat pro Netzwerk) erkannt; Lösung in Klärung, Karussells ausgesetzt.
 - 11.11.2026 – Sprachausgabe eingeführt (Thorsten-Voice, Piper, MIT); Ton = Stimme + leises Musikbett.

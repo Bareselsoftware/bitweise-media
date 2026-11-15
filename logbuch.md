@@ -11,6 +11,15 @@ Eine Zeile pro Post. Zeiten in Europe/Berlin. Kennzahlen werden vom Daily nachge
 | 4 | Sa 14.11. 17:30 | 2,4 oder 5 GHz – welches WLAN ist besser? | media/f8a22078-tag04.mp4 | 427331328 / 8077901914264192266 | 13.11. 19:46 | veröffentlicht 14.11. 17:30 (IG Reel DfupG1opT_K, TT 7708065689214504225) | 14.11.: noch keine Daten | – | – | – | – | – |
 | 5 | So 15.11. 17:30 | Was das Schloss im Browser wirklich bedeutet (HTTPS) | media/9a76ca4a-tag05.mp4 | 428260724 / 4443588904072268634 | 14.11. 19:49 | freigegeben (Tilman, 14.11. 19:52) | – | – | – | – | – | – |
 
+## Kennzahlen-Nachtrag 15.11. (manuell, TikTok laut Metricool)
+| Tag | Views | Likes | Kommentare | Shares | Ø Watchtime / Länge |
+|---|---|---|---|---|---|
+| 1 | 656 | 10 | 3 | 0 | 4 s / 26 s |
+| 2 | 607 | 5 | 0 | 0 | 6 s / 32 s |
+| 3 | 944 | 8 | 0 | 0 | 5 s / 32 s |
+| 4 | 978 | 16 | 1 | 1 | 9 s / 34 s |
+TikTok-Follower 15.11.: 5. Komplett-Quote bei allen ≈ 0 %. → Format v2.
+
 ## Follower
 | Datum | Instagram | TikTok | Summe | Δ |
 |---|---|---|---|---|

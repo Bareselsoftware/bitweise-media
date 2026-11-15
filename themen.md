@@ -1,40 +1,40 @@
 # Themen-Backlog
 
-Reihenfolge = Plan. Status: offen / erstellt / veröffentlicht / abgelehnt. Montags immer KI-Logbuch.
+Reihenfolge = Plan (ab Tag 6 Format v2, s. handbuch.md). Status: offen / erstellt / veröffentlicht / abgelehnt. Montags immer KI-Logbuch.
 Darf vom Daily/Wochenrecap umsortiert werden, wenn Daten es begründen.
 
 ## Videos (täglich 17:30)
 | Tag | Datum | Thema | Serie | Status |
 |---|---|---|---|---|
 | 1 | Mi 11.11. | Intro: „Ich bin eine KI“ | Meta | veröffentlicht |
-| 2 | Do 12.11. | Was passiert, wenn du google.de eintippst? (DNS → Server → Antwort) | Wie funktioniert | veröffentlicht |
+| 2 | Do 12.11. | Was passiert, wenn du google.de eintippst? | Wie funktioniert | veröffentlicht |
 | 3 | Fr 13.11. | Macht dich der Inkognito-Modus anonym? | Mythos-Check | veröffentlicht |
 | 4 | Sa 14.11. | 2,4 GHz oder 5 GHz – welches WLAN ist besser? | Wie funktioniert | veröffentlicht |
-| 5 | So 15.11. | Was das Schloss im Browser wirklich bedeutet (HTTPS) | Wie funktioniert | erstellt (freigegeben) |
-| 6 | Mo 16.11. | KI-Logbuch #1: Zahlen der Woche | KI-Logbuch | offen |
-| 7 | Di 17.11. | Mehr Balken = schnelleres Internet? | Mythos-Check | offen |
-| 8 | Mi 18.11. | Was ist eine IP-Adresse? | Wie funktioniert | offen |
-| 9 | Do 19.11. | Was ein VPN kann – und was nicht | Mythos-Check | offen |
-| 10 | Fr 20.11. | Was passiert im Flugmodus? | Wie funktioniert | offen |
-| 11 | Sa 21.11. | Warum Ping beim Zocken wichtiger ist als Bandbreite | Wie funktioniert | offen |
-| 12 | So 22.11. | Lange Passwörter schlagen komplizierte | Mythos-Check | offen |
-| 13 | Mo 23.11. | KI-Logbuch #2: Zahlen der Woche | KI-Logbuch | offen |
-| 14 | Di 24.11. | Wie funktioniert kontaktloses Bezahlen (NFC)? | Wie funktioniert | offen |
-| 15 | Mi 25.11. | Ist eine gelöschte Datei wirklich weg? | Mythos-Check | offen |
-| 16 | Do 26.11. | Router vs. Modem – was macht was? | Wie funktioniert | offen |
-| 17 | Fr 27.11. | Warum Bluetooth-Kopfhörer verzögern | Wie funktioniert | offen |
-| 18 | Sa 28.11. | Woran du Phishing in 3 Sekunden erkennst | Wie funktioniert | offen |
-| 19 | So 29.11. | Wie ein QR-Code Daten speichert | Wie funktioniert | offen |
-| 20 | Mo 30.11. | KI-Logbuch #3: Zahlen der Woche | KI-Logbuch | offen |
-| 21 | Di 01.12. | Updates machen das Handy langsam? | Mythos-Check | offen |
-| 22 | Mi 02.12. | Was ist eigentlich „die Cloud“? | Wie funktioniert | offen |
-| 23 | Do 03.12. | Wie Google Maps den Stau erkennt | Wie funktioniert | offen |
-| 24 | Fr 04.12. | Was frisst dein Datenvolumen? | Wie funktioniert | offen |
-| 25 | Sa 05.12. | Wie erkennt ein Touchscreen deinen Finger? | Wie funktioniert | offen |
-| 26 | So 06.12. | Was sind Cookies – und was speichern sie? | Wie funktioniert | offen |
-| 27 | Mo 07.12. | KI-Logbuch #4: Zahlen der Woche | KI-Logbuch | offen |
-| 28 | Di 08.12. | 2-Faktor-Anmeldung in 30 Sekunden | Wie funktioniert | offen |
-| 29 | Mi 09.12. | USB-C ist nicht gleich USB-C | Mythos-Check | offen |
+| 5 | So 15.11. | Was das Schloss im Browser wirklich bedeutet (HTTPS) | Wie funktioniert | freigegeben |
+| 6 | Mo 16.11. | KI-Logbuch #1: „5 Tage, 4.000 Views, 5 Follower – was mache ich falsch?“ (ehrliche Zahlen, Befund Watchtime, was ich ändere; Frage: „Was soll ich besser machen?“) | KI-Logbuch | offen |
+| 7 | Di 17.11. | Hört dein Handy wirklich mit? (Mythos; Frage: „Schon mal erlebt? Ja/Nein“) | Mythos-Check | offen |
+| 8 | Mi 18.11. | Rate mal: Wie schnell ist „Passwort123“ geknackt? (Countdown, Auflösung; Frage: „Wie lang ist deins? Nur die Zahl!“) | Rate mal | offen |
+| 9 | Do 19.11. | Warum dein Akku bei Kälte plötzlich leer ist (Frage: „Ist dir das schon passiert?“) | Kurios | offen |
+| 10 | Fr 20.11. | Diese Paket-SMS ist Betrug – woran du es in 3 Sekunden erkennst (Frage: „Hast du so eine schon bekommen?“; „Schick das deinen Eltern“) | Alltags-Trick | offen |
+| 11 | Sa 21.11. | Warum Captchas dich nach Ampeln fragen (Kurios; Frage: „Wie oft klickst du falsch?“) | Kurios | offen |
+| 12 | So 22.11. | Lädt der Flugmodus dein Handy schneller? (Frage: „Team Ja oder Team Nein?“) | Mythos-Check | offen |
+| 13 | Mo 23.11. | KI-Logbuch #2: Hat das neue Format funktioniert? | KI-Logbuch | offen |
+| 14 | Di 24.11. | Woher weiß TikTok, was dir gefällt? (Frage: „Was zeigt dir deine For You gerade?“) | Kurios | offen |
+| 15 | Mi 25.11. | Bringt ein VPN wirklich Anonymität? (Frage: „Nutzt du eins? Ja/Nein“) | Mythos-Check | offen |
+| 16 | Do 26.11. | Black Friday: So prüfst du in 10 Sekunden, ob der Rabatt echt ist (Preisverlauf) („Speicher dir das“) | Alltags-Trick | offen |
+| 17 | Fr 27.11. | Ist eine gelöschte Datei wirklich weg? | Mythos-Check | offen |
+| 18 | Sa 28.11. | Warum Fotos vom Bildschirm Streifen haben (Moiré) | Kurios | offen |
+| 19 | So 29.11. | Rate mal: Was frisst am meisten Datenvolumen? (Video, Musik, Insta, WhatsApp) | Rate mal | offen |
+| 20 | Mo 30.11. | KI-Logbuch #3 | KI-Logbuch | offen |
+| 21 | Di 01.12. | Machen Updates dein Handy langsam? | Mythos-Check | offen |
+| 22 | Mi 02.12. | Warum Bluetooth-Kopfhörer beim Zocken verzögern | Kurios | offen |
+| 23 | Do 03.12. | Woher Google Maps weiß, dass Stau ist | Kurios | offen |
+| 24 | Fr 04.12. | Warum dein Touchscreen mit Handschuhen nicht geht | Kurios | offen |
+| 25 | Sa 05.12. | Was Cookies wirklich speichern („Alle akzeptieren“ – ja oder nein?) | Mythos-Check | offen |
+| 26 | So 06.12. | 2-Faktor-Anmeldung: der eine Schalter, der dein Konto rettet („Speicher dir das“) | Alltags-Trick | offen |
+| 27 | Mo 07.12. | KI-Logbuch #4 | KI-Logbuch | offen |
+| 28 | Di 08.12. | USB-C ist nicht gleich USB-C (Frage: „Wie viele Kabel hast du in der Schublade?“) | Kurios | offen |
+| 29 | Mi 09.12. | Kann eine KI lügen? (die KI über sich selbst; Frage: „Würdest du mir glauben?“) | Meta | offen |
 | 30 | Do 10.12. | Finale: Was eine KI in 30 Tagen gelernt hat | KI-Logbuch | offen |
 
 ## Karussells (Instagram, Di + Fr 12:30, ab 17.11.)
