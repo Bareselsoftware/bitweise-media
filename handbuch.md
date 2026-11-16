@@ -24,7 +24,7 @@ Dieses Handbuch ist das Gedächtnis des Experiments. Jeder geplante Lauf liest e
 
 - **Themen allgemein & alltagsnah:** Dinge, die jeder mit Handy erlebt (Akku, WLAN, Fake-SMS, „hört mein Handy mit?“, Black Friday). Keine Fachbegriffe im Hook. Fachwörter nur, wenn sie sofort erklärt werden.
 - **Länge 25–35 s** (Tilman 16.11.: Länge ist gut für TikTok – nicht kürzen, sondern spannender machen). Hook + Spannungsbogen + Auflösung + Frage.
-- **Hook in Sekunde 0:** Erster Frame zeigt sofort die Hook-Zeile/-Zahl groß (kein Tipp-Effekt, kein Logo-Intro), Stimme ab 0,05 s. Hook = Kontrast, Zahl oder Behauptung mit Spannung („3.000 haben mich gesehen. 5 sind geblieben.“, „Dein Handy hört mit. Oder?“).
+- **Hook in Sekunde 0:** Erster Frame zeigt sofort die Hook-Zeile/-Zahl groß (kein Tipp-Effekt, kein Logo-Intro), Stimme ab 0,05 s. Hook = konkrete Alltagssituation, Entweder-oder, Kontrast oder Zahl – keine reine Ja/Nein-Frage (Recap 16.11.) („3.000 haben mich gesehen. 5 sind geblieben.“, „Dein Handy hört mit. Oder?“).
 - **Untertitel (Pflicht, automatisch):** `build()` zeichnet sie aus den echten Wortzeiten der Stimme (Whisper) – 1–3 Wörter, GROSS, aktives Wort gelb hinterlegt. Grafiken müssen den Bereich **y 1310–1500** freilassen.
 - **Stock (Pixabay):** echte Fotos/Videos als Hintergrund (`stock_search` → `stock_preview` ansehen → `stock_get` → `Clip`/`stock_bg`, abgedunkelt 0,5–0,75). **Keine KI-generierten Bilder/Videos:** Filter in `stil.py` (nur Fotos/Filme, Upload ≤ 2021, KI-/CG-Tags raus) **und** jede Auswahl selbst ansehen; im Zweifel nicht verwenden. Keine erkennbaren Marken/Logos im Fokus, keine Personen in heiklem Kontext. Quellen via `write_credits()` in `werkstatt/quellen.md`. Musik/Sounds: Pixabay hat dafür keine Schnittstelle → eigenes Musikbett, bis Tilman Tracks unter `sounds/` ablegt.
 - **Zeitplan aus der Stimme:** `VOICE = timeline([...])`, Grafik-Ereignisse mit `at(WORDS, "wort")` aufs gesprochene Wort legen (Vorbild: `tag06_logbuch1.py`).
@@ -33,7 +33,7 @@ Dieses Handbuch ist das Gedächtnis des Experiments. Jeder geplante Lauf liest e
 - **Follow-Grund:** Serien mit Teilen („Teil 1 von 2 – Teil 2 morgen“) wo sinnvoll; Hinweis im Bild am Ende „Folgen = morgen schlauer“ (kurz, max. 1 s).
 - **Formate:** MYTHOS-CHECK (Rot falsch/Grün richtig) · RATE MAL (Frage, 3 s Pause zum Raten mit Countdown, Auflösung) · ALLTAGS-TRICK · KURIOS („Warum …?“) · montags KI-LOGBUCH (die KI berichtet offen über ihr Experiment – Zahlen, Fehler, was sie ändert; das Experiment selbst ist ein Hook).
 - Stil: `werkstatt/stil.py` (dunkel, Cyan-Akzent, Inter Display, Pixelraster). Text: Du-Form, locker, trockener Humor. Die KI spricht als KI.
-- Rhythmus: täglich 1 Video (Reel + TikTok) um **17:30**. Karussells ausgesetzt (Metricool-Budget).
+- Rhythmus: täglich 1 Video um **18:00** (Experiment Tag 7–12, vorher 17:30). Ohne Metricool-Bezahlplan nur TikTok (Recap 16.11.), mit Bezahlplan Reel + TikTok. Karussells ausgesetzt (Metricool-Budget).
 - Caption: 1. Zeile = Hook als Frage; 1–2 kurze Sätze; letzte Zeile = dieselbe Interaktionsfrage. 4–6 Hashtags, breit statt Nische (#wusstestdu #handytricks #alltagshacks #technik + 1–2 themenspezifisch). TikTok-`title` = Hook (≤ 90 Zeichen). Instagram: `firstCommentText` = die Interaktionsfrage (eigener Kommentar unter eigenem Post, keine Interaktion mit Personen).
 - **Monetarisierung:** Niemals um Geld bitten (keine Spenden-/Trinkgeld-/Unterstützer-Aufrufe – Tilmans klare Vorgabe 15.11.). Weg: Affiliate-Links, nur mit offengelegter Werbung/Affiliate-Kennzeichnung („Werbung“/„Anzeige“ in Caption + Plattform-Flag `commercialContent…`) und nur Links/Konten, die Tilman eingerichtet hat. Keine erfundenen Empfehlungen, nur Dinge, die zum Video-Thema ehrlich passen.
 
@@ -88,6 +88,11 @@ Dieses Handbuch ist das Gedächtnis des Experiments. Jeder geplante Lauf liest e
 - Unsicher, ob ein Inhalt gegen Regeln oder Fakten verstößt: Post nicht anlegen, im Bericht nachfragen.
 
 ## Änderungsprotokoll
+- 16.11.2026 – **Wochenrecap 1** (Daten Tag 1–4; Tag 5 lieferte Metricool noch nicht; kleine Zahlen → geringe Aussagekraft):
+  1. **TikTok vor Instagram, solange das Budget knapp ist.** Daten: TikTok Ø 796 Views, 5 Follower; Instagram Ø 67 Views, 0 Follower. Das Budget ist mit Tag 10 bei 20/20. → Ab Tag 7 nur TikTok, solange kein Metricool-Bezahlplan aktiv ist (8 freie Slots = Tag 7–14 statt 7–10). Mit Bezahlplan wieder IG + TikTok. Tilman kann das per „veto“ zurücknehmen.
+  2. **Hook = konkrete Alltagssituation oder Entweder-oder statt Ja/Nein-Frage.** Daten: Tag 4 (Hook „2,4 oder 5 GHz?“) hat die beste Watchtime (TT 9 s, IG 7,4 s) und die niedrigste IG-Skip-Rate (65,5 %); Tag 3 (Hook „Macht Inkognito anonym?“) die schlechteste (IG-Skip 87,5 %, Ø 2,3 s). Das ist n = 4, also nur eine Einschätzung, die Tag 7–12 prüfen sollen.
+  3. **Tag 10 aktualisiert:** statt Paket-SMS die aktuelle Welle falscher Bank-/PayPal-Nachrichten (Verbraucherzentrale Phishing-Radar 9.–13.11.: PayPal, Commerzbank, Consorsbank, easybank, CHECK24).
+  - **Experiment Woche 2 (Tag 7–12):** Posting-Zeit **18:00 statt 17:30**. Grund: Laut Metricool liegt der TikTok-Zeitindex um 18 Uhr an jedem Tag 8–27 % über 17 Uhr. Auswertung im Recap 23.11. (Views nach 24 h vs. Tag 1–5).
 - 10.11.2026 – Start-Setup: Konzept, Stil, Kette Metricool ↔ GitHub getestet (Bild + Video, KI-Labels ok).
 - 16.11.2026 – Format v3 (Tilman): Länge bleibt ~30 s, dafür Hook + Tempo; Untertitel mit Wort-Highlight; Pixabay-Stock (ohne KI-Material); automatische Audio-/Sync-QA. Tag 06 neu gebaut.
 - 15.11.2026 – Tilmans Vorgabe: allgemeiner + mehr Interaktion; Ziel 20 € Umsatz → Metricool-Bezahlplan. Format v2 (12–20 s, Hook in Sek. 0, Interaktionsfrage am Ende, breite Themen), Themenplan ab Tag 6 neu.
