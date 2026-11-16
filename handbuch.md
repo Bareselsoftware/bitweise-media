@@ -19,13 +19,16 @@ Dieses Handbuch ist das Gedächtnis des Experiments. Jeder geplante Lauf liest e
 4. Im Repo nur: fertige Medien, Werkstatt-Code, diese Dokumente. Keine E-Mail-Adressen, keine privaten Daten.
 5. Fachlich korrekt: jede Tatsachenbehauptung im Video muss stimmen. Im Zweifel recherchieren oder vereinfachen, nie raten.
 
-## Konzept (Format v2 ab Tag 6 – Tilmans Vorgabe 15.11.: allgemeiner, mehr Interaktion)
+## Konzept (Format v3 ab Tag 6 – Tilmans Vorgabe 15.11.: allgemeiner, mehr Interaktion)
 **Befund Tag 1–4 (TikTok):** 600–980 Views je Video, fast nur For-You. Aber Ø Watchtime 4–9 s bei 26–34 s Länge, Komplett-Quote ≈ 0 %, IG-Skip-Rate 66–86 %. → Die Leute wischen in den ersten Sekunden weg. Ohne Zuschauen keine Interaktion und keine Follows.
 
 - **Themen allgemein & alltagsnah:** Dinge, die jeder mit Handy erlebt (Akku, WLAN, Fake-SMS, „hört mein Handy mit?“, Black Friday). Keine Fachbegriffe im Hook. Fachwörter nur, wenn sie sofort erklärt werden.
-- **Länge 12–20 s** (hart: max. 22 s). Lieber ein Gedanke pro Video als drei Schritte.
-- **Hook in Sekunde 0:** Erster Frame zeigt sofort die Hook-Zeile groß (kein Tipp-Effekt, kein Logo-Intro), Stimme setzt bei 0,1 s ein. Hook = Behauptung/Frage mit Spannung („Dein Handy hört mit. Oder?“), nicht „Heute erkläre ich …“.
-- **Tempo:** alle 2–3 s neues Bild-Element. Sprechtempo `say(text, tempo=0.88)`.
+- **Länge 25–35 s** (Tilman 16.11.: Länge ist gut für TikTok – nicht kürzen, sondern spannender machen). Hook + Spannungsbogen + Auflösung + Frage.
+- **Hook in Sekunde 0:** Erster Frame zeigt sofort die Hook-Zeile/-Zahl groß (kein Tipp-Effekt, kein Logo-Intro), Stimme ab 0,05 s. Hook = Kontrast, Zahl oder Behauptung mit Spannung („3.000 haben mich gesehen. 5 sind geblieben.“, „Dein Handy hört mit. Oder?“).
+- **Untertitel (Pflicht, automatisch):** `build()` zeichnet sie aus den echten Wortzeiten der Stimme (Whisper) – 1–3 Wörter, GROSS, aktives Wort gelb hinterlegt. Grafiken müssen den Bereich **y 1310–1500** freilassen.
+- **Stock (Pixabay):** echte Fotos/Videos als Hintergrund (`stock_search` → `stock_preview` ansehen → `stock_get` → `Clip`/`stock_bg`, abgedunkelt 0,5–0,75). **Keine KI-generierten Bilder/Videos:** Filter in `stil.py` (nur Fotos/Filme, Upload ≤ 2021, KI-/CG-Tags raus) **und** jede Auswahl selbst ansehen; im Zweifel nicht verwenden. Keine erkennbaren Marken/Logos im Fokus, keine Personen in heiklem Kontext. Quellen via `write_credits()` in `werkstatt/quellen.md`. Musik/Sounds: Pixabay hat dafür keine Schnittstelle → eigenes Musikbett, bis Tilman Tracks unter `sounds/` ablegt.
+- **Zeitplan aus der Stimme:** `VOICE = timeline([...])`, Grafik-Ereignisse mit `at(WORDS, "wort")` aufs gesprochene Wort legen (Vorbild: `tag06_logbuch1.py`).
+- **Tempo:** alle 2–3 s neues Bild-Element. Sprechtempo `say.__defaults__ = (0.9,)`.
 - **Schluss = Interaktionsfrage**, mit 1 Wort oder Emoji beantwortbar („Team 2,4 oder Team 5? Schreib’s in die Kommentare.“, „Schon mal passiert? Ja oder nein.“). Bei Listen/Tipps: „Speicher dir das“. Bei Fehlern, die andere machen: „Schick das jemandem, der …“.
 - **Follow-Grund:** Serien mit Teilen („Teil 1 von 2 – Teil 2 morgen“) wo sinnvoll; Hinweis im Bild am Ende „Folgen = morgen schlauer“ (kurz, max. 1 s).
 - **Formate:** MYTHOS-CHECK (Rot falsch/Grün richtig) · RATE MAL (Frage, 3 s Pause zum Raten mit Countdown, Auflösung) · ALLTAGS-TRICK · KURIOS („Warum …?“) · montags KI-LOGBUCH (die KI berichtet offen über ihr Experiment – Zahlen, Fehler, was sie ändert; das Experiment selbst ist ein Hook).
@@ -54,7 +57,8 @@ Dieses Handbuch ist das Gedächtnis des Experiments. Jeder geplante Lauf liest e
    - Ab 25.11.: direkt geplant anlegen (`draft: false`, `autoPublish: true`).
    - Thema: nächstes offenes aus `themen.md`, außer die Daten sprechen klar für eine Anpassung (dann im Bericht begründen). Montags-Posts = KI-Logbuch. Themen müssen Format v2 erfüllen – bei alten Ideen Hook und Schluss entsprechend umbauen.
    - **Stimme:** Jedes Video bekommt Sprechtext (Thorsten-Stimme via `say()`/`build(voice=…)`, Lizenz in `werkstatt/STIMME-LIZENZ.md`). Zahlen, Abkürzungen und Domains ausschreiben („dreißig“, „google punkt de“). Erst mit `say(text)[1]` die Sprechdauern messen, dann Szenenlängen und Einblendzeiten darauf abstimmen (Text erscheint, wenn er gesprochen wird). `build()` bricht ab, wenn Sprechtexte sich überlappen (< 0,12 s Pause) oder übers Ende laufen – dann Startzeiten bzw. Szenen anpassen, nicht die Prüfung umgehen. Bild-Text und Sprechtext dürfen leicht abweichen, sollen inhaltlich aber übereinstimmen.
-   - Skript `werkstatt/tagNN_thema.py` nach Vorbild `tag01_intro.py` schreiben. **Vor dem Rendern** mit `stills()` Kontaktbogen zeichnen und ansehen (Lesbarkeit, Überlappungen, sichere Zone). Dann `build()`. Länge 12–20 s (Format v2). `seed` = Tagnummer.
+   - Skript `werkstatt/tagNN_thema.py` nach Vorbild `tag01_intro.py` schreiben. **Vor dem Rendern** mit `stills()` Kontaktbogen zeichnen und ansehen (Lesbarkeit, Überlappungen, sichere Zone). Dann `build()`. Länge 25–35 s (Format v3). `seed` = Tagnummer.
+   - **Pflicht-QA nach jedem Video:** `build()` prüft das fertige MP4 automatisch (Überlappung, Aussetzer/Tonlöcher, Untertitel-Sync gegen unabhängige Spracherkennung, Ton-/Bildlänge) und bricht bei Fehlern ab – dann Ursache beheben, neu rendern, nie ein Video ohne „QA OK“ verwenden. Zusätzlich 5 Frames aus dem fertigen Video ansehen (Hook-Frame, Szenenwechsel, Schluss). QA-Bericht nach `werkstatt/qa/` kopieren und die Sync-Zeile im Bericht an Tilman nennen.
    - Video nach `media/<8 zufällige Hex-Zeichen>-tagNN.mp4`, committen, pushen, URL prüfen (HTTP 200).
    - Post via `createScheduledPost`: providers instagram + tiktok; `instagramData: {type: "REEL", showReelOnFeed: true, isAiGenerated: true}`; `tiktokData: {privacyOption: "PUBLIC_TO_EVERYONE", title: …, isAigc: true, autoAddMusic: false, disableComment/Duet/Stitch: false, commercialContent*: false, photoCoverIndex: 0}`; Uhrzeit laut Rhythmus.
    - Karussell-Tage (Di/Fr ab 17.11.): zusätzlich Folien mit `carousel_slide()` erzeugen, nur providers instagram, `type: "POST"`, `isAiGenerated: true`, 12:30.
@@ -85,6 +89,7 @@ Dieses Handbuch ist das Gedächtnis des Experiments. Jeder geplante Lauf liest e
 
 ## Änderungsprotokoll
 - 10.11.2026 – Start-Setup: Konzept, Stil, Kette Metricool ↔ GitHub getestet (Bild + Video, KI-Labels ok).
+- 16.11.2026 – Format v3 (Tilman): Länge bleibt ~30 s, dafür Hook + Tempo; Untertitel mit Wort-Highlight; Pixabay-Stock (ohne KI-Material); automatische Audio-/Sync-QA. Tag 06 neu gebaut.
 - 15.11.2026 – Tilmans Vorgabe: allgemeiner + mehr Interaktion; Ziel 20 € Umsatz → Metricool-Bezahlplan. Format v2 (12–20 s, Hook in Sek. 0, Interaktionsfrage am Ende, breite Themen), Themenplan ab Tag 6 neu.
 - 11.11.2026 – Tag 02: überlappende Sprechtexte (Tilman bemerkt) → automatische Timing-Prüfung in `build()`.
 - 11.11.2026 – Metricool-Free-Limit (20/Monat pro Netzwerk) erkannt; Lösung in Klärung, Karussells ausgesetzt.
