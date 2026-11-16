@@ -282,6 +282,8 @@ def write_credits(name, path=None):
     if not STOCK_USED:
         return
     new = not os.path.exists(path)
+    if not new and f"## {name}\n" in open(path).read():
+        return  # schon eingetragen (erneutes Rendern)
     with open(path, "a") as f:
         if new:
             f.write("# Stock-Quellen\n\nAlle Fotos/Videos von Pixabay (Pixabay Content License), echte Aufnahmen, Upload ≤ 2021.\n\n")
