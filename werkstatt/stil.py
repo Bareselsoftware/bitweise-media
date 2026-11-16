@@ -316,6 +316,23 @@ def _ensure_voice():
     _voice = PiperVoice.load(f"{STIMME_DIR}/{STIMME}.onnx")
     return _voice
 
+# Aussprache-Wörterbuch: Schreibweise im Untertitel → Lautschrift für die Stimme.
+# Ersetzt Wortanfänge (auch in Komposita/Flexion: „Sneaker-Werbung“, „Sneakern“). Wortanzahl bleibt gleich.
+# Neue Einträge, sobald Tilman oder die QA eine falsche Aussprache meldet. Prüfen mit: _ensure_voice().phonemize(...)
+AUSSPRACHE = {
+    "Sneaker": "Snieker",   # Tilman 16.11.: nicht „Sne-a-ker“
+}
+
+def spoken(text):
+    """Text so umschreiben, wie die Stimme ihn sprechen soll (Groß/klein bleibt erhalten)."""
+    import re
+    for src, dst in AUSSPRACHE.items():
+        def _r(m, dst=dst):
+            w = m.group(0)
+            return dst.upper() if w.isupper() else (dst.lower() if w.islower() else dst)
+        text = re.sub(r"\b" + re.escape(src), _r, text, flags=re.IGNORECASE)
+    return text
+
 def say(text, tempo=0.95):
     """Spricht `text` (Deutsch). Liefert (samples float32 @44,1 kHz, dauer_s). Zahlen ausschreiben!
     Dauer vorab abfragen, um Szenenlängen passend zu wählen: say("...")[1]"""
@@ -324,7 +341,7 @@ def say(text, tempo=0.95):
         return _say_cache[key]
     v = _ensure_voice()
     from piper import SynthesisConfig
-    chunks = [c.audio_int16_array for c in v.synthesize(text, syn_config=SynthesisConfig(length_scale=tempo))]
+    chunks = [c.audio_int16_array for c in v.synthesize(spoken(text), syn_config=SynthesisConfig(length_scale=tempo))]
     a = np.concatenate(chunks).astype(np.float32) / 32768.0
     sr0 = v.config.sample_rate
     n = int(len(a) * 44100 / sr0)
@@ -411,8 +428,8 @@ def word_timings(voice):
         a, dur = say(text)
         key = (text, dur)
         if key not in _wt_cache:
-            hyp = _transcribe(_to16k(a), prompt=text)
-            times, q = _align(text.split(), hyp, 0.0, dur)
+            hyp = _transcribe(_to16k(a), prompt=spoken(text))
+            times, q = _align(spoken(text).split(), hyp, 0.0, dur)  # Zeiten der gesprochenen Form, Anzeige = Original
             _wt_cache[key] = (times, q, " ".join(h[0] for h in hyp))
         times, q, heard = _wt_cache[key]
         out += [(w, start + s, start + e) for w, (s, e) in zip(text.split(), times)]
@@ -617,7 +634,7 @@ def qa(mp4, voice, words, voice_wav, pausen_ok=(), max_gap=1.6):
         warns.append(f"Pegelspitze {peak:.3f} – evtl. Übersteuerung")
     # 3) Untertitel-Sync: fertigen Ton unabhängig erkennen, mit Untertitel-Zeiten vergleichen
     hyp = _transcribe(mx)
-    ref = [w[0] for w in words]
+    ref = [spoken(w[0]) for w in words]
     times, q = _align(ref, hyp, 0, len(mx) / msr)
     from difflib import SequenceMatcher
     rn = [_norm(w) for w in ref]; hn = [_norm(h[0]) for h in hyp]
