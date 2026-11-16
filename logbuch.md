@@ -11,7 +11,7 @@ Eine Zeile pro Post. Zeiten in Europe/Berlin. Kennzahlen werden vom Daily nachge
 | 4 | Sa 14.11. 17:30 | 2,4 oder 5 GHz – welches WLAN ist besser? | media/f8a22078-tag04.mp4 | 427331328 / 8077901914264192266 | 13.11. 19:46 | veröffentlicht 14.11. 17:30 (IG Reel DfupG1opT_K, TT 7708065689214504225) | 120 / 978 | 109 / – | 7,4 s / 9 s | 0 / 16 | 0 / – | 0 / 1 |
 | 5 | So 15.11. 17:30 | Was das Schloss im Browser wirklich bedeutet (HTTPS) | media/9a76ca4a-tag05.mp4 | 428260724 / 4443588904072268634 | 14.11. 19:49 | veröffentlicht 15.11. 17:30 (IG Reel DfxNxahj7G9, TT 7708436864264375585) | 105 / 717 | 99 / – | 4,1 s / 3 s | 1 / 8 | 0 / – | 0 / 0 |
 | 6 | Mo 16.11. 17:30 | KI-Logbuch #1: „3.000 haben mich gesehen. 5 sind geblieben.“ (Format v3, 26 s, QA OK) | media/7706abe0-tag06.mp4 | 429646396 / 1004731510098707124 | 15.11. 19:47 | veröffentlicht 16.11. 17:30 (IG Reel DfzypmCkodx, TT 7708807852126637345) | 16.11.: noch keine Daten | – | – | – | – | – |
-| 7 | Di 17.11. 18:00 | Mythos-Check: Hört dein Handy heimlich mit? (Format v3, 33 s, nur TikTok, QA OK) | media/b987c08d-tag07.mp4 | 430634338 / 907579224556326600 | 16.11. 19:57 | Entwurf (v2: Aussprache Sneaker) – wartet auf Okay | – | – | – | – | – | – |
+| 7 | Di 17.11. 18:00 | Mythos-Check: Hört dein Handy heimlich mit? (Format v3, 33 s, nur TikTok, QA OK) | media/b987c08d-tag07.mp4 | 430649357 / 907579224556326600 | 16.11. 19:57 | freigegeben (Tilman, 16.11. 21:49; v2 Aussprache) | – | – | – | – | – | – |
 
 ## Kennzahlen-Nachtrag 15.11. (manuell, TikTok laut Metricool)
 | Tag | Views | Likes | Kommentare | Shares | Ø Watchtime / Länge |
