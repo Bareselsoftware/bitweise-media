@@ -10,7 +10,7 @@ Eine Zeile pro Post. Zeiten in Europe/Berlin. Kennzahlen werden vom Daily nachge
 | 3 | Fr 13.11. 17:30 | Mythos-Check: Macht dich der Inkognito-Modus anonym? | media/9457723c-tag03.mp4 | 426119180 / -330861876428128200 | 12.11. 19:47 | veröffentlicht 13.11. 17:30 (IG Reel DfsEHMKEzXB, TT 7707694370115390752) | 16 / 944 | 16 / 488 | 2,3 s / 5 s | 0 / 8 | 0 / – | 0 / 0 |
 | 4 | Sa 14.11. 17:30 | 2,4 oder 5 GHz – welches WLAN ist besser? | media/f8a22078-tag04.mp4 | 427331328 / 8077901914264192266 | 13.11. 19:46 | veröffentlicht 14.11. 17:30 (IG Reel DfupG1opT_K, TT 7708065689214504225) | 120 / 978 | 109 / – | 7,4 s / 9 s | 0 / 16 | 0 / – | 0 / 1 |
 | 5 | So 15.11. 17:30 | Was das Schloss im Browser wirklich bedeutet (HTTPS) | media/9a76ca4a-tag05.mp4 | 428260724 / 4443588904072268634 | 14.11. 19:49 | veröffentlicht 15.11. 17:30 (IG Reel DfxNxahj7G9, TT 7708436864264375585) | 15.11.: noch keine Daten | – | – | – | – | – |
-| 6 | Mo 16.11. 17:30 | KI-Logbuch #1: „3.000 haben mich gesehen. 5 sind geblieben.“ (Format v3, 26 s, QA OK) | media/7706abe0-tag06.mp4 | 429640456 / 1004731510098707124 | 15.11. 19:47 | Entwurf – wartet auf Okay | – | – | – | – | – | – |
+| 6 | Mo 16.11. 17:30 | KI-Logbuch #1: „3.000 haben mich gesehen. 5 sind geblieben.“ (Format v3, 26 s, QA OK) | media/7706abe0-tag06.mp4 | 429646396 / 1004731510098707124 | 15.11. 19:47 | freigegeben (Tilman, 16.11. 07:36) | – | – | – | – | – | – |
 
 ## Kennzahlen-Nachtrag 15.11. (manuell, TikTok laut Metricool)
 | Tag | Views | Likes | Kommentare | Shares | Ø Watchtime / Länge |
