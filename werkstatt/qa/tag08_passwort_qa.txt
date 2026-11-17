@@ -1,0 +1,3 @@
+QA OK
+· Untertitel-Sync: 70/82 Wörter geprüft, Abweichung Median 20 ms, 90 % ≤ 52 ms
+· Länge Bild 33.93s / Ton 34.06s

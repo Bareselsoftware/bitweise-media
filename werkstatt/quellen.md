@@ -11,3 +11,8 @@ Alle Fotos/Videos von Pixabay (Pixabay Content License), echte Aufnahmen, Upload
 - video #9490 (2017) von chayka1270: https://pixabay.com/videos/id-9490/
 - video #45535 (2020) von USA-Reiseblogger: https://pixabay.com/videos/id-45535/
 - video #38084 (2020) von mephala1980: https://pixabay.com/videos/id-38084/
+## Tag 08 – Rate mal: Passwort123
+- video #31806 (2020) von computergottyt: https://pixabay.com/videos/id-31806/
+- video #24527 (2019) von arthurreeder: https://pixabay.com/videos/id-24527/
+- video #10822 (2017) von Coverr-Free-Footage: https://pixabay.com/videos/id-10822/
+- video #47743 (2020) von crew_jak: https://pixabay.com/videos/id-47743/
