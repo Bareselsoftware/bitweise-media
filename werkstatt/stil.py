@@ -100,6 +100,16 @@ def wrap(d, s, f, maxw):
     lines.append(cur)
     return lines
 
+def punch(img, t, t0=0.0, dur=0.45, amount=0.14):
+    """Zoom-Punch: Bild startet um `amount` vergrößert und federt bis t0+dur auf 100 % zurück (Bewegung in Sek. 0–1)."""
+    k = 1 - ease((t - t0) / dur)
+    if k <= 0.001 or t < t0:
+        return img
+    z = 1 + amount * k
+    w, h = int(W / z), int(H / z)
+    x, y = (W - w) // 2, (H - h) // 2
+    return img.crop((x, y, x + w, y + h)).resize((W, H), Image.BILINEAR)
+
 def scene_fade(img, t, dur, fin=0.2, fout=0.2):
     a = min(1.0, t / fin) if fin else 1.0
     b = min(1.0, (dur - t) / fout) if fout else 1.0
@@ -520,7 +530,7 @@ def _voice_track(n, voice):
             print(f"WARNUNG: Sprechtext läuft über das Videoende: {text!r}")
     return tr
 
-def audio(total, path, seed=0, typing=(), voice=()):
+def audio(total, path, seed=0, typing=(), voice=(), sfx=()):
     """Selbst erzeugtes Musikbett (Pad + weicher Puls) + optionale Tipp-Klicks + optionale Stimme.
     seed variiert Tonart/Akkordfolge; typing = [(start_s, anzahl, abstand_s), ...];
     voice = [(start_s, "Sprechtext"), ...] – Musik wird unter der Stimme automatisch leiser."""
@@ -559,6 +569,25 @@ def audio(total, path, seed=0, typing=(), voice=()):
             s0 = int((start + i * step) * sr); L = int(0.03 * sr)
             if s0 + L < n:
                 out[s0:s0 + L] += 0.12 * rng.standard_normal(L) * np.exp(-np.arange(L) / sr * 220)
+    for st, kind in sfx:  # Ton-Akzente: "whoosh" (Rauschen, steigend) | "hit" (tiefer Schlag)
+        s0 = int(st * sr)
+        if kind == "whoosh":
+            L = int(0.38 * sr); tt = np.arange(L) / sr
+            nz = rng.standard_normal(L)
+            env = np.sin(np.pi * np.minimum(1, tt / 0.38)) ** 2
+            # einfacher steigender Bandpass: gleitender Mittelwert mit schrumpfendem Fenster
+            sw = np.zeros(L); acc = 0.0
+            for i in range(L):
+                a_ = 0.02 + 0.5 * i / L
+                acc += a_ * (nz[i] - acc); sw[i] = acc
+            seg = 0.5 * sw * env
+        else:  # hit
+            L = int(0.3 * sr); tt = np.arange(L) / sr
+            fq = 90 * np.exp(-tt * 12) + 40
+            seg = 0.6 * np.sin(2 * np.pi * np.cumsum(fq) / sr) * np.exp(-tt * 10)
+        e = min(n, s0 + L)
+        if s0 < n:
+            out[s0:e] += seg[: e - s0]
     out *= np.clip((total - t) / 1.2, 0, 1)
     out = np.tanh(out * 1.4); out /= np.max(np.abs(out)) / 0.6
     if voice:
@@ -669,7 +698,7 @@ def qa(mp4, voice, words, voice_wav, pausen_ok=(), max_gap=1.6):
     return not errs, rep
 
 def build(scenes, name, outdir="/home/claude/bitweise-out", seed=0, typing=(), voice=(), subs=True,
-          pausen_ok=(), max_gap=1.6):
+          pausen_ok=(), max_gap=1.6, sfx=()):
     """Rendert alle Szenen mit Untertiteln, Audio (+ Stimme), fügt zusammen und prüft das Ergebnis (qa).
     Ergebnis: {outdir}/{name}.mp4. Bricht bei QA-Fehlern ab (Bericht in {name}_qa.txt)."""
     os.makedirs(outdir, exist_ok=True)
@@ -684,7 +713,7 @@ def build(scenes, name, outdir="/home/claude/bitweise-out", seed=0, typing=(), v
         render_scene(outdir, f"{name}_{sn}", fn, dur, 0 if i == 0 else 0.2, 0 if i == len(scenes) - 1 else 0.2,
                      overlay=overlay, offset=off)
         off += dur
-    audio(total, f"{outdir}/{name}.wav", seed, typing, voice)
+    audio(total, f"{outdir}/{name}.wav", seed, typing, voice, sfx)
     lst = f"{outdir}/{name}_list.txt"
     with open(lst, "w") as fh:
         for sn, _, _ in scenes:
