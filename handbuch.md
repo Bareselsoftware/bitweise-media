@@ -87,6 +87,14 @@ Dieses Handbuch ist das Gedächtnis des Experiments. Jeder geplante Lauf liest e
 - Kette bricht (Push, URL, Metricool-Fehler): einmal sauber wiederholen, sonst nicht improvisieren – im Bericht mit ⚠️ melden und genau sagen, was fehlt.
 - Unsicher, ob ein Inhalt gegen Regeln oder Fakten verstößt: Post nicht anlegen, im Bericht nachfragen.
 
+## Laufendes Experiment: Einstieg (ab Tag 9, Do 19.11.; Tilman 17.11.)
+Befund bis Tag 6: Ø Wiedergabe bleibt bei ~6 s, auch im Format v3 → die ersten 2–3 s halten nicht. Vermutete Hauptursache: ruhige Stimme + stehende Grafik wirken wie ein Vortrag.
+Gilt für jedes Video ab Tag 9 (Tag 7 und 8 bleiben unverändert als Vergleich):
+1. **Sprechtempo schneller:** `say.__defaults__ = (0.82,)` (statt 0,9).
+2. **Erster Satz ≤ 6 Wörter**, der Kern der Spannung (z. B. „Dein Handy hört mit?“). Erklärung erst im zweiten Satz.
+3. **Bewegung in Sekunde 0–1:** Stock-Nahaufnahme mit Zoom-Punch (`punch(img, t)` aus stil.py) statt stehender Zahl, dazu Ton-Akzent bei 0 s (`build(..., sfx=[(0.0, "whoosh")])`). Hook-Text erscheint trotzdem ab Frame 0.
+Auswertung im Wochenrecap 23.11.: Ø Wiedergabe und Views Tag 9–12 vs. Tag 6–8 (TikTok). Erfolg = Ø Wiedergabe ≥ 9 s oder deutlich mehr Views; sonst nächster Hebel (Themenwahl, Uhrzeit, Stimme ersetzen).
+
 ## Änderungsprotokoll
 - 16.11.2026 – **Wochenrecap 1** (Daten Tag 1–4; Tag 5 lieferte Metricool noch nicht; kleine Zahlen → geringe Aussagekraft):
   1. **TikTok vor Instagram, solange das Budget knapp ist.** Daten: TikTok Ø 796 Views, 5 Follower; Instagram Ø 67 Views, 0 Follower. Das Budget ist mit Tag 10 bei 20/20. → Ab Tag 7 nur TikTok, solange kein Metricool-Bezahlplan aktiv ist (8 freie Slots = Tag 7–14 statt 7–10). Mit Bezahlplan wieder IG + TikTok. Tilman kann das per „veto“ zurücknehmen.
@@ -94,6 +102,7 @@ Dieses Handbuch ist das Gedächtnis des Experiments. Jeder geplante Lauf liest e
   3. **Tag 10 aktualisiert:** statt Paket-SMS die aktuelle Welle falscher Bank-/PayPal-Nachrichten (Verbraucherzentrale Phishing-Radar 9.–13.11.: PayPal, Commerzbank, Consorsbank, easybank, CHECK24).
   - **Experiment Woche 2 (Tag 7–12):** Posting-Zeit **18:00 statt 17:30**. Grund: Laut Metricool liegt der TikTok-Zeitindex um 18 Uhr an jedem Tag 8–27 % über 17 Uhr. Auswertung im Recap 23.11. (Views nach 24 h vs. Tag 1–5).
 - 10.11.2026 – Start-Setup: Konzept, Stil, Kette Metricool ↔ GitHub getestet (Bild + Video, KI-Labels ok).
+- 17.11.2026 – Experiment „Einstieg“ beschlossen (ab Tag 9): schnellere Stimme, Hook-Satz ≤ 6 Wörter, Bewegung + Ton-Akzent in Sekunde 0–1.
 - 16.11.2026 – Aussprache-Wörterbuch `AUSSPRACHE` in `stil.py` (Tilman: „Sneaker“ = „Snieker“); Untertitel zeigen die Originalschreibweise. Bei englischen Lehnwörtern vorab `phonemize` prüfen und ggf. eintragen.
 - 16.11.2026 – Format v3 (Tilman): Länge bleibt ~30 s, dafür Hook + Tempo; Untertitel mit Wort-Highlight; Pixabay-Stock (ohne KI-Material); automatische Audio-/Sync-QA. Tag 06 neu gebaut.
 - 15.11.2026 – Tilmans Vorgabe: allgemeiner + mehr Interaktion; Ziel 20 € Umsatz → Metricool-Bezahlplan. Format v2 (12–20 s, Hook in Sek. 0, Interaktionsfrage am Ende, breite Themen), Themenplan ab Tag 6 neu.
