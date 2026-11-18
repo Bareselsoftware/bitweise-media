@@ -16,3 +16,9 @@ Alle Fotos/Videos von Pixabay (Pixabay Content License), echte Aufnahmen, Upload
 - video #24527 (2019) von arthurreeder: https://pixabay.com/videos/id-24527/
 - video #10822 (2017) von Coverr-Free-Footage: https://pixabay.com/videos/id-10822/
 - video #47743 (2020) von crew_jak: https://pixabay.com/videos/id-47743/
+## Tag 09 – Kurios: Akku bei Kälte
+- video #3147 (2016) von Life-Of-Vids: https://pixabay.com/videos/id-3147/
+- video #7105 (2017) von Hans: https://pixabay.com/videos/id-7105/
+- video #1971 (2016) von RelaxVideos: https://pixabay.com/videos/id-1971/
+- video #29314 (2019) von hu_lexxi: https://pixabay.com/videos/id-29314/
+- video #61298 (2021) von Engin_Akyurt: https://pixabay.com/videos/id-61298/

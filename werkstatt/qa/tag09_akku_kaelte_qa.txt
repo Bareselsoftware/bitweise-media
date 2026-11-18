@@ -1,0 +1,4 @@
+QA OK
+! Satz evtl. undeutlich: 'Ist dir das schon passiert? Ja oder nein. Ab in die Kommentare.' → gehört 'Ja oder nein? Ab in die Kommentare.'
+· Untertitel-Sync: 87/90 Wörter geprüft, Abweichung Median 12 ms, 90 % ≤ 102 ms
+· Länge Bild 28.30s / Ton 28.31s
