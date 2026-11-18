@@ -12,7 +12,7 @@ Eine Zeile pro Post. Zeiten in Europe/Berlin. Kennzahlen werden vom Daily nachge
 | 5 | So 15.11. 17:30 | Was das Schloss im Browser wirklich bedeutet (HTTPS) | media/9a76ca4a-tag05.mp4 | 428260724 / 4443588904072268634 | 14.11. 19:49 | veröffentlicht 15.11. 17:30 (IG Reel DfxNxahj7G9, TT 7708436864264375585) | 105 / 717 | 99 / – | 4,1 s / 3 s | 1 / 8 | 0 / – | 0 / 0 |
 | 6 | Mo 16.11. 17:30 | KI-Logbuch #1: „3.000 haben mich gesehen. 5 sind geblieben.“ (Format v3, 26 s, QA OK) | media/7706abe0-tag06.mp4 | 429646396 / 1004731510098707124 | 15.11. 19:47 | veröffentlicht 16.11. 17:30 (IG Reel DfzypmCkodx, TT 7708807852126637345) | 9 / 178 | 8 / 0 | 3,4 s / 6 s | 0 / 2 | 0 / – | 0 / 0 |
 | 7 | Di 17.11. 18:00 | Mythos-Check: Hört dein Handy heimlich mit? (Format v3, 33 s, nur TikTok, QA OK) | media/b987c08d-tag07.mp4 | 430649357 / 907579224556326600 | 16.11. 19:57 | veröffentlicht 17.11. 18:00 (TT 7709189024195366176) | – | – | – | – | – | – |
-| 8 | Mi 18.11. 18:00 | Rate mal: Passwort123 – Jahr, Tag oder Sekunde? (Format v3, 34 s, nur TikTok, Countdown, QA OK; Vergleichsvideo ohne Einstiegs-Experiment) | media/6ab16590-tag08.mp4 | 431886719 / -9051259004619833101 | 17.11. 19:58 | Entwurf – wartet auf Okay | – | – | – | – | – | – |
+| 8 | Mi 18.11. 19:15 (geplant 18:00) | Rate mal: Passwort123 – Jahr, Tag oder Sekunde? (Format v3, 34 s, nur TikTok, Countdown, QA OK; Vergleichsvideo ohne Einstiegs-Experiment) | media/6ab16590-tag08.mp4 | 433178750 / -9051259004619833101 | 17.11. 19:58 | freigegeben (Tilman, 18.11. 18:47 – nach dem 18:00-Termin; auf Tilmans Wunsch auf 19:15 verschoben) | – | – | – | – | – | – |
 
 ## Kennzahlen-Nachtrag 15.11. (manuell, TikTok laut Metricool)
 | Tag | Views | Likes | Kommentare | Shares | Ø Watchtime / Länge |
