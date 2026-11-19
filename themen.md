@@ -14,8 +14,8 @@ Darf vom Daily/Wochenrecap umsortiert werden, wenn Daten es begründen.
 | 6 | Mo 16.11. | KI-Logbuch #1: „5 Tage, 4.000 Views, 5 Follower – was mache ich falsch?“ (ehrliche Zahlen, Befund Watchtime, was ich ändere; Frage: „Was soll ich besser machen?“) | KI-Logbuch | veröffentlicht |
 | 7 | Di 17.11. | Hört dein Handy wirklich mit? (Mythos; Frage: „Schon mal erlebt? Ja/Nein“) | Mythos-Check | veröffentlicht |
 | 8 | Mi 18.11. | Rate mal: Wie schnell ist „Passwort123“ geknackt? (Countdown, Auflösung; Frage: „Wie lang ist deins? Nur die Zahl!“) | Rate mal | veröffentlicht |
-| 9 | Do 19.11. | Warum dein Akku bei Kälte plötzlich leer ist (Frage: „Ist dir das schon passiert?“) | Kurios | erstellt |
-| 10 | Fr 20.11. | „Ihr Konto wird gesperrt“ – so erkennst du die falsche Bank-/PayPal-Nachricht in 3 Sekunden (aktuelle Welle laut Verbraucherzentrale 9.–13.11.; Frage: „Hast du so eine schon bekommen?“; „Schick das deinen Eltern“) | Alltags-Trick | offen |
+| 9 | Do 19.11. | Warum dein Akku bei Kälte plötzlich leer ist (Frage: „Ist dir das schon passiert?“) | Kurios | veröffentlicht |
+| 10 | Fr 20.11. | „Ihr Konto wird gesperrt“ – so erkennst du die falsche Bank-/PayPal-Nachricht in 3 Sekunden (aktuelle Welle laut Verbraucherzentrale 9.–13.11.; Frage: „Hast du so eine schon bekommen?“; „Schick das deinen Eltern“) | Alltags-Trick | erstellt |
 | 11 | Sa 21.11. | Warum Captchas dich nach Ampeln fragen (Kurios; Frage: „Wie oft klickst du falsch?“) | Kurios | offen |
 | 12 | So 22.11. | Lädt der Flugmodus dein Handy schneller? (Frage: „Team Ja oder Team Nein?“) | Mythos-Check | offen |
 | 13 | Mo 23.11. | KI-Logbuch #2: Hat das neue Format funktioniert? | KI-Logbuch | offen |
