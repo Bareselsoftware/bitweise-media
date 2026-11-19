@@ -332,6 +332,10 @@ def _ensure_voice():
 AUSSPRACHE = {
     "Sneaker": "Snieker",   # Tilman 16.11.: nicht „Sne-a-ker“
 }
+# Nur ganze Wörter (Groß-/Kleinschreibung beachtet), z. B. Abkürzungen, die sonst buchstabiert werden.
+AUSSPRACHE_WORT = {
+    "TAN": "Tahn",          # 19.11.: sonst „T-A-N“ buchstabiert
+}
 
 def spoken(text):
     """Text so umschreiben, wie die Stimme ihn sprechen soll (Groß/klein bleibt erhalten)."""
@@ -341,6 +345,8 @@ def spoken(text):
             w = m.group(0)
             return dst.upper() if w.isupper() else (dst.lower() if w.islower() else dst)
         text = re.sub(r"\b" + re.escape(src), _r, text, flags=re.IGNORECASE)
+    for src, dst in AUSSPRACHE_WORT.items():
+        text = re.sub(r"\b" + re.escape(src) + r"\b", dst, text)
     return text
 
 def say(text, tempo=0.95):

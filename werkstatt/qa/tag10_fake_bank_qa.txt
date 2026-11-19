@@ -1,0 +1,5 @@
+QA OK
+! Satz evtl. undeutlich: 'Erstens: Zeitdruck. Sofort, heute noch, sonst gesperrt.' → gehört 'Das ist der erste Mal.'
+! Satz evtl. undeutlich: 'Hast du so eine schon bekommen? Ja oder nein. Und schick das deinen Eltern.' → gehört 'Ja oder nein. Schick das deinen Eltern.'
+· Untertitel-Sync: 81/88 Wörter geprüft, Abweichung Median 16 ms, 90 % ≤ 191 ms
+· Länge Bild 30.00s / Ton 30.03s

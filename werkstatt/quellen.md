@@ -22,3 +22,9 @@ Alle Fotos/Videos von Pixabay (Pixabay Content License), echte Aufnahmen, Upload
 - video #1971 (2016) von RelaxVideos: https://pixabay.com/videos/id-1971/
 - video #29314 (2019) von hu_lexxi: https://pixabay.com/videos/id-29314/
 - video #61298 (2021) von Engin_Akyurt: https://pixabay.com/videos/id-61298/
+## Tag 10 – Alltags-Trick: Falsche Bank-/PayPal-Nachricht
+- video #9490 (2017) von chayka1270: https://pixabay.com/videos/id-9490/
+- video #3172 (2016) von Coverr-Free-Footage: https://pixabay.com/videos/id-3172/
+- video #3176 (2016) von Coverr-Free-Footage: https://pixabay.com/videos/id-3176/
+- video #10822 (2017) von Coverr-Free-Footage: https://pixabay.com/videos/id-10822/
+- video #6590 (2016) von Yoniteck: https://pixabay.com/videos/id-6590/
