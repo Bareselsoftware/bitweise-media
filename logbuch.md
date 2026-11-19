@@ -14,7 +14,7 @@ Eine Zeile pro Post. Zeiten in Europe/Berlin. Kennzahlen werden vom Daily nachge
 | 7 | Di 17.11. 18:00 | Mythos-Check: Hört dein Handy heimlich mit? (Format v3, 33 s, nur TikTok, QA OK) | media/b987c08d-tag07.mp4 | 430649357 / 907579224556326600 | 16.11. 19:57 | veröffentlicht 17.11. 18:00 (TT 7709189024195366176) | – / 188 | – / 0 | – / 4 s | 3 | – | 0 |
 | 8 | Mi 18.11. 19:15 (geplant 18:00) | Rate mal: Passwort123 – Jahr, Tag oder Sekunde? (Format v3, 34 s, nur TikTok, Countdown, QA OK; Vergleichsvideo ohne Einstiegs-Experiment) | media/6ab16590-tag08.mp4 | 433178750 / -9051259004619833101 | 17.11. 19:58 | veröffentlicht 18.11. 19:15 (TT 7709576944345550113) | – | – | – | – | – | – |
 | 9 | Do 19.11. 18:00 | Kurios: Akku bei Kälte – „Eben noch 30 %. Jetzt aus.“ (Format v3 + Experiment Einstieg, 28 s, nur TikTok, QA OK) | media/aed6f1ba-tag09.mp4 | 434443335 / 275892063966937546 | 18.11. 19:52 | veröffentlicht 19.11. 18:00 (TT 7709930539511336225) | – | – | – | – | – | – |
-| 10 | Fr 20.11. 18:00 | Alltags-Trick: „Konto gesperrt? Bitte nicht klicken.“ – falsche Bank-/PayPal-Nachricht erkennen (Format v3 + Experiment Einstieg, 30 s, nur TikTok, QA OK) | media/9a264597-tag10.mp4 | 434624079 / -3034021007025747634 | 19.11. 19:54 | Entwurf – wartet auf Okay | – | – | – | – | – | – |
+| 10 | Fr 20.11. 18:00 | Alltags-Trick: „Konto gesperrt? Bitte nicht klicken.“ – falsche Bank-/PayPal-Nachricht erkennen (Format v3 + Experiment Einstieg, 30 s, nur TikTok, QA OK) | media/9a264597-tag10.mp4 | 434727576 / -3034021007025747634 | 19.11. 19:54 | freigegeben (Tilman, 19.11. 21:24), geplant 20.11. 18:00 | – | – | – | – | – | – |
 
 ## Kennzahlen-Nachtrag 15.11. (manuell, TikTok laut Metricool)
 | Tag | Views | Likes | Kommentare | Shares | Ø Watchtime / Länge |
