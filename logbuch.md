@@ -13,7 +13,7 @@ Eine Zeile pro Post. Zeiten in Europe/Berlin. Kennzahlen werden vom Daily nachge
 | 6 | Mo 16.11. 17:30 | KI-Logbuch #1: „3.000 haben mich gesehen. 5 sind geblieben.“ (Format v3, 26 s, QA OK) | media/7706abe0-tag06.mp4 | 429646396 / 1004731510098707124 | 15.11. 19:47 | veröffentlicht 16.11. 17:30 (IG Reel DfzypmCkodx, TT 7708807852126637345) | 14 / 231 | 12 / 59 | 3,2 s / 5 s | 0 / 2 | 0 / – | 0 / 1 |
 | 7 | Di 17.11. 18:00 | Mythos-Check: Hört dein Handy heimlich mit? (Format v3, 33 s, nur TikTok, QA OK) | media/b987c08d-tag07.mp4 | 430649357 / 907579224556326600 | 16.11. 19:57 | veröffentlicht 17.11. 18:00 (TT 7709189024195366176) | – / 188 | – / k. A. | – / 4 s | 3 | – | 0 |
 | 8 | Mi 18.11. 19:15 (geplant 18:00) | Rate mal: Passwort123 – Jahr, Tag oder Sekunde? (Format v3, 34 s, nur TikTok, Countdown, QA OK; Vergleichsvideo ohne Einstiegs-Experiment) | media/6ab16590-tag08.mp4 | 433178750 / -9051259004619833101 | 17.11. 19:58 | veröffentlicht 18.11. 19:15 (TT 7709576944345550113) | – | – | – | – | – | – |
-| 9 | Do 19.11. 18:00 | Kurios: Akku bei Kälte – „Eben noch 30 %. Jetzt aus.“ (Format v3 + Experiment Einstieg, 28 s, nur TikTok, QA OK) | media/aed6f1ba-tag09.mp4 | 433259376 / 275892063966937546 | 18.11. 19:52 | Entwurf – wartet auf Okay | – | – | – | – | – | – |
+| 9 | Do 19.11. 18:00 | Kurios: Akku bei Kälte – „Eben noch 30 %. Jetzt aus.“ (Format v3 + Experiment Einstieg, 28 s, nur TikTok, QA OK) | media/aed6f1ba-tag09.mp4 | 434443335 / 275892063966937546 | 18.11. 19:52 | freigegeben (Tilman, 19.11. 17:22), geplant 19.11. 18:00 | – | – | – | – | – | – |
 
 ## Kennzahlen-Nachtrag 15.11. (manuell, TikTok laut Metricool)
 | Tag | Views | Likes | Kommentare | Shares | Ø Watchtime / Länge |
