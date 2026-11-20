@@ -28,3 +28,9 @@ Alle Fotos/Videos von Pixabay (Pixabay Content License), echte Aufnahmen, Upload
 - video #3176 (2016) von Coverr-Free-Footage: https://pixabay.com/videos/id-3176/
 - video #10822 (2017) von Coverr-Free-Footage: https://pixabay.com/videos/id-10822/
 - video #6590 (2016) von Yoniteck: https://pixabay.com/videos/id-6590/
+## Tag 11 – Kurios: Warum Captchas nach Ampeln fragen
+- video #37844 (2020) von PascalBeckmann: https://pixabay.com/videos/id-37844/
+- video #127 (2015) von Coverr-Free-Footage: https://pixabay.com/videos/id-127/
+- video #98176 (2021) von MagicTV: https://pixabay.com/videos/id-98176/
+- video #23712 (2019) von wcw6900: https://pixabay.com/videos/id-23712/
+- photo #6803755 (2021) von Piozard: https://pixabay.com/photos/crosswalk-road-city-street-light-6803755/
