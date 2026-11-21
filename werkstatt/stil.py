@@ -337,6 +337,8 @@ AUSSPRACHE_WORT = {
     "TAN": "Tahn",          # 19.11.: sonst „T-A-N“ buchstabiert
     "Bot": "Bott",          # 21.11. Tilman: sonst „Boot“ (langes o)
     "Bots": "Botts",
+    "Turbo": "Tuhrbo",      # 21.11. QA: sonst „Topo“/„Truppe“ verstanden
+    "Mythos": "Mühtos",     # 21.11. QA: langes ü (Duden), sonst „Midos“/„Motus“
 }
 
 def spoken(text):

@@ -34,3 +34,8 @@ Alle Fotos/Videos von Pixabay (Pixabay Content License), echte Aufnahmen, Upload
 - video #98176 (2021) von MagicTV: https://pixabay.com/videos/id-98176/
 - video #23712 (2019) von wcw6900: https://pixabay.com/videos/id-23712/
 - photo #6803755 (2021) von Piozard: https://pixabay.com/photos/crosswalk-road-city-street-light-6803755/
+## Tag 12 – Mythos-Check: Lädt der Flugmodus schneller?
+- video #44082 (2020) von aghyadnajjar: https://pixabay.com/videos/id-44082/
+- video #58484 (2020) von N4DRR: https://pixabay.com/videos/id-58484/
+- video #3176 (2016) von Coverr-Free-Footage: https://pixabay.com/videos/id-3176/
+- video #736 (2015) von elchao: https://pixabay.com/videos/id-736/
