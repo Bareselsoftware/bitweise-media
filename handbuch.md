@@ -92,10 +92,11 @@ Befund bis Tag 6: Ø Wiedergabe bleibt bei ~6 s, auch im Format v3 → die erste
 Gilt für jedes Video ab Tag 9 (Tag 7 und 8 bleiben unverändert als Vergleich):
 1. **Sprechtempo schneller:** `say.__defaults__ = (0.82,)` (statt 0,9).
 2. **Erster Satz ≤ 6 Wörter**, der Kern der Spannung (z. B. „Dein Handy hört mit?“). Erklärung erst im zweiten Satz.
-3. **Bewegung in Sekunde 0–1:** Stock-Nahaufnahme mit Zoom-Punch (`punch(img, t)` aus stil.py) statt stehender Zahl, dazu Ton-Akzent bei 0 s (`build(..., sfx=[(0.0, "whoosh")])`). Hook-Text erscheint trotzdem ab Frame 0.
+3. **Bewegung in Sekunde 0–1:** Stock-Nahaufnahme mit Zoom-Punch (`punch(img, t)` aus stil.py) statt stehender Zahl. Hook-Text erscheint trotzdem ab Frame 0. **Kein Ton-Akzent** (kein `sfx` in `build()`) – Tilman 21.11.: Whoosh klang wie Pusten ins Mikrofon, ab Tag 12 weglassen.
 Auswertung im Wochenrecap 23.11.: Ø Wiedergabe und Views Tag 9–12 vs. Tag 6–8 (TikTok). Erfolg = Ø Wiedergabe ≥ 9 s oder deutlich mehr Views; sonst nächster Hebel (Themenwahl, Uhrzeit, Stimme ersetzen).
 
 ## Änderungsprotokoll
+- 21.11.2026 – Tilman: Ton-Akzent in Sekunde 0 ab Tag 12 weglassen (kein `sfx`). „Bot“ wird jetzt „Bott“ gesprochen (`AUSSPRACHE_WORT`).
 - 16.11.2026 – **Wochenrecap 1** (Daten Tag 1–4; Tag 5 lieferte Metricool noch nicht; kleine Zahlen → geringe Aussagekraft):
   1. **TikTok vor Instagram, solange das Budget knapp ist.** Daten: TikTok Ø 796 Views, 5 Follower; Instagram Ø 67 Views, 0 Follower. Das Budget ist mit Tag 10 bei 20/20. → Ab Tag 7 nur TikTok, solange kein Metricool-Bezahlplan aktiv ist (8 freie Slots = Tag 7–14 statt 7–10). Mit Bezahlplan wieder IG + TikTok. Tilman kann das per „veto“ zurücknehmen.
   2. **Hook = konkrete Alltagssituation oder Entweder-oder statt Ja/Nein-Frage.** Daten: Tag 4 (Hook „2,4 oder 5 GHz?“) hat die beste Watchtime (TT 9 s, IG 7,4 s) und die niedrigste IG-Skip-Rate (65,5 %); Tag 3 (Hook „Macht Inkognito anonym?“) die schlechteste (IG-Skip 87,5 %, Ø 2,3 s). Das ist n = 4, also nur eine Einschätzung, die Tag 7–12 prüfen sollen.
