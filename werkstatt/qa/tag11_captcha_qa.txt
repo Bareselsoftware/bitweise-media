@@ -1,3 +1,4 @@
 QA OK
-· Untertitel-Sync: 83/91 Wörter geprüft, Abweichung Median 11 ms, 90 % ≤ 38 ms
-· Länge Bild 30.27s / Ton 30.26s
+! Satz evtl. undeutlich: 'Der echte Test kommt aber oft schon vorher.' → gehört 'Der ist schon vorher.'
+· Untertitel-Sync: 82/91 Wörter geprüft, Abweichung Median 14 ms, 90 % ≤ 93 ms
+· Länge Bild 29.80s / Ton 29.90s

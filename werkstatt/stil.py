@@ -335,6 +335,8 @@ AUSSPRACHE = {
 # Nur ganze Wörter (Groß-/Kleinschreibung beachtet), z. B. Abkürzungen, die sonst buchstabiert werden.
 AUSSPRACHE_WORT = {
     "TAN": "Tahn",          # 19.11.: sonst „T-A-N“ buchstabiert
+    "Bot": "Bott",          # 21.11. Tilman: sonst „Boot“ (langes o)
+    "Bots": "Botts",
 }
 
 def spoken(text):
