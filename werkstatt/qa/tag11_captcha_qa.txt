@@ -1,4 +1,3 @@
 QA OK
-! Satz evtl. undeutlich: 'Der echte Test kommt aber oft schon vorher.' → gehört 'Der ist schon vorher.'
-· Untertitel-Sync: 82/91 Wörter geprüft, Abweichung Median 14 ms, 90 % ≤ 93 ms
-· Länge Bild 29.80s / Ton 29.90s
+· Untertitel-Sync: 84/91 Wörter geprüft, Abweichung Median 13 ms, 90 % ≤ 55 ms
+· Länge Bild 29.57s / Ton 29.70s

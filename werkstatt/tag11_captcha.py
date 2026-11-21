@@ -228,5 +228,5 @@ if __name__ == "__main__":
         print(f"END {END:.2f}")
         print(stills(SCENES, "/home/claude/bitweise-out/tag11", voice=VOICE))
     else:
-        print(build(SCENES, "tag11_captcha", seed=11, voice=VOICE, sfx=[(0.0, "whoosh")]))
+        print(build(SCENES, "tag11_captcha", seed=11, voice=VOICE, sfx=[(0.0, "swish")]))
         write_credits("Tag 11 – Kurios: Warum Captchas nach Ampeln fragen")

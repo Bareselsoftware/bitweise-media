@@ -577,7 +577,7 @@ def audio(total, path, seed=0, typing=(), voice=(), sfx=()):
             s0 = int((start + i * step) * sr); L = int(0.03 * sr)
             if s0 + L < n:
                 out[s0:s0 + L] += 0.12 * rng.standard_normal(L) * np.exp(-np.arange(L) / sr * 220)
-    for st, kind in sfx:  # Ton-Akzente: "whoosh" (Rauschen, steigend) | "hit" (tiefer Schlag)
+    for st, kind in sfx:  # Ton-Akzente: "swish" (hell, Standard) | "whoosh" (Rauschen, alt) | "hit" (tiefer Schlag)
         s0 = int(st * sr)
         if kind == "whoosh":
             L = int(0.38 * sr); tt = np.arange(L) / sr
@@ -589,6 +589,14 @@ def audio(total, path, seed=0, typing=(), voice=(), sfx=()):
                 a_ = 0.02 + 0.5 * i / L
                 acc += a_ * (nz[i] - acc); sw[i] = acc
             seg = 0.5 * sw * env
+        elif kind == "swish":  # 21.11. (Tilman: „whoosh“ klingt wie Pusten ins Mikro) – hell, ohne Tiefen
+            L = int(0.28 * sr); tt = np.arange(L) / sr
+            env = np.sin(np.pi * np.minimum(1, tt / 0.28)) ** 3
+            nz = np.diff(rng.standard_normal(L + 1))          # Hochpass: kein Rumpeln/Pusten
+            nz = np.diff(np.concatenate([[0.0], nz]))         # zweite Ordnung, noch weniger Tiefen
+            fq = 500 * np.exp(np.log(1800 / 500) * tt / 0.28)  # gleitender Ton 500 → 1800 Hz
+            tone = np.sin(2 * np.pi * np.cumsum(fq) / sr)
+            seg = (0.035 * nz + 0.10 * tone) * env
         else:  # hit
             L = int(0.3 * sr); tt = np.arange(L) / sr
             fq = 90 * np.exp(-tt * 12) + 40
