@@ -39,3 +39,8 @@ Alle Fotos/Videos von Pixabay (Pixabay Content License), echte Aufnahmen, Upload
 - video #58484 (2020) von N4DRR: https://pixabay.com/videos/id-58484/
 - video #3176 (2016) von Coverr-Free-Footage: https://pixabay.com/videos/id-3176/
 - video #736 (2015) von elchao: https://pixabay.com/videos/id-736/
+## Tag 13 – KI-Logbuch #2: Hat das neue Format funktioniert?
+- video #64594 (2021) von Josh_Malic: https://pixabay.com/videos/id-64594/
+- video #3180 (2016) von Coverr-Free-Footage: https://pixabay.com/videos/id-3180/
+- video #3176 (2016) von Coverr-Free-Footage: https://pixabay.com/videos/id-3176/
+- video #736 (2015) von elchao: https://pixabay.com/videos/id-736/
