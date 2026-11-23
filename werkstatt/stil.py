@@ -339,6 +339,9 @@ AUSSPRACHE_WORT = {
     "Bots": "Botts",
     "Turbo": "Tuhrbo",      # 21.11. QA: sonst „Topo“/„Truppe“ verstanden
     "Mythos": "Mühtos",     # 21.11. QA: langes ü (Duden), sonst „Midos“/„Motus“
+    "Black": "Bläck",       # 23.11.: sonst deutsch „Blak“
+    "Friday": "Fraiday",    # 23.11.: sonst „Fridei“
+    "Countdown": "Kauntdaun",  # 23.11.: sonst „Kuhntdoun“
 }
 
 def spoken(text):

@@ -44,3 +44,8 @@ Alle Fotos/Videos von Pixabay (Pixabay Content License), echte Aufnahmen, Upload
 - video #3180 (2016) von Coverr-Free-Footage: https://pixabay.com/videos/id-3180/
 - video #3176 (2016) von Coverr-Free-Footage: https://pixabay.com/videos/id-3176/
 - video #736 (2015) von elchao: https://pixabay.com/videos/id-736/
+## Tag 14 – Rate mal: Black Friday
+- video #993 (2015) von Coverr-Free-Footage: https://pixabay.com/videos/id-993/
+- video #47601 (2020) von Engin_Akyurt: https://pixabay.com/videos/id-47601/
+- video #52823 (2020) von dayanandgarg: https://pixabay.com/videos/id-52823/
+- video #12876 (2017) von Werni: https://pixabay.com/videos/id-12876/
