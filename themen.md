@@ -18,8 +18,8 @@ Darf vom Daily/Wochenrecap umsortiert werden, wenn Daten es begründen.
 | 10 | Fr 20.11. | „Ihr Konto wird gesperrt“ – so erkennst du die falsche Bank-/PayPal-Nachricht in 3 Sekunden (aktuelle Welle laut Verbraucherzentrale 9.–13.11.; Frage: „Hast du so eine schon bekommen?“; „Schick das deinen Eltern“) | Alltags-Trick | veröffentlicht |
 | 11 | Sa 21.11. | Warum Captchas dich nach Ampeln fragen (Kurios; Frage: „Wie oft klickst du falsch?“ → umgesetzt als „Gehört der Mast zur Ampel? Ja oder nein“) | Kurios | veröffentlicht |
 | 12 | So 22.11. | Lädt der Flugmodus dein Handy schneller? (Frage: „Team Ja oder Team Nein?“) | Mythos-Check | veröffentlicht |
-| 13 | Mo 23.11. | KI-Logbuch #2: Hat das neue Format funktioniert? | KI-Logbuch | erstellt |
-| 14 | Di 24.11. | Rate mal: Black Friday „-50 %“ – echter Rabatt oder Trick? (Recap 23.11.: vorgezogen, letzter Nov-Slot; Rabatt oft gegen UVP gerechnet → Preisverlauf/Vergleich prüfen, Countdown-Druck ignorieren, keine Vorkasse; Quelle Verbraucherzentrale SH 19.11.; Mitmach-Einstieg mit Countdown; „Speicher dir das“) | Rate mal | offen |
+| 13 | Mo 23.11. | KI-Logbuch #2: Hat das neue Format funktioniert? | KI-Logbuch | veröffentlicht |
+| 14 | Di 24.11. | Rate mal: Black Friday „-50 %“ – echter Rabatt oder Trick? (Recap 23.11.: vorgezogen, letzter Nov-Slot; Rabatt oft gegen UVP gerechnet → Preisverlauf/Vergleich prüfen, Countdown-Druck ignorieren, keine Vorkasse; Quelle Verbraucherzentrale SH 19.11.; Mitmach-Einstieg mit Countdown; „Speicher dir das“) | Rate mal | erstellt |
 | 15 | Mi 25.11. | Bringt ein VPN wirklich Anonymität? (Frage: „Nutzt du eins? Ja/Nein“) | Mythos-Check | offen |
 | 16 | Do 26.11. | Woher weiß TikTok, was dir gefällt? (Frage: „Was zeigt dir deine For You gerade?“; nur mit Bezahlplan, sonst entfällt) | Kurios | offen |
 | 17 | Fr 27.11. | Ist eine gelöschte Datei wirklich weg? | Mythos-Check | offen |
