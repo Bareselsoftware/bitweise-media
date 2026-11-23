@@ -19,9 +19,9 @@ Darf vom Daily/Wochenrecap umsortiert werden, wenn Daten es begründen.
 | 11 | Sa 21.11. | Warum Captchas dich nach Ampeln fragen (Kurios; Frage: „Wie oft klickst du falsch?“ → umgesetzt als „Gehört der Mast zur Ampel? Ja oder nein“) | Kurios | veröffentlicht |
 | 12 | So 22.11. | Lädt der Flugmodus dein Handy schneller? (Frage: „Team Ja oder Team Nein?“) | Mythos-Check | veröffentlicht |
 | 13 | Mo 23.11. | KI-Logbuch #2: Hat das neue Format funktioniert? | KI-Logbuch | erstellt |
-| 14 | Di 24.11. | Woher weiß TikTok, was dir gefällt? (Frage: „Was zeigt dir deine For You gerade?“) | Kurios | offen |
+| 14 | Di 24.11. | Rate mal: Black Friday „-50 %“ – echter Rabatt oder Trick? (Recap 23.11.: vorgezogen, letzter Nov-Slot; Rabatt oft gegen UVP gerechnet → Preisverlauf/Vergleich prüfen, Countdown-Druck ignorieren, keine Vorkasse; Quelle Verbraucherzentrale SH 19.11.; Mitmach-Einstieg mit Countdown; „Speicher dir das“) | Rate mal | offen |
 | 15 | Mi 25.11. | Bringt ein VPN wirklich Anonymität? (Frage: „Nutzt du eins? Ja/Nein“) | Mythos-Check | offen |
-| 16 | Do 26.11. | Black Friday: So prüfst du in 10 Sekunden, ob der Rabatt echt ist (Preisverlauf) („Speicher dir das“) | Alltags-Trick | offen |
+| 16 | Do 26.11. | Woher weiß TikTok, was dir gefällt? (Frage: „Was zeigt dir deine For You gerade?“; nur mit Bezahlplan, sonst entfällt) | Kurios | offen |
 | 17 | Fr 27.11. | Ist eine gelöschte Datei wirklich weg? | Mythos-Check | offen |
 | 18 | Sa 28.11. | Warum Fotos vom Bildschirm Streifen haben (Moiré) | Kurios | offen |
 | 19 | So 29.11. | Rate mal: Was frisst am meisten Datenvolumen? (Video, Musik, Insta, WhatsApp) | Rate mal | offen |
@@ -36,6 +36,9 @@ Darf vom Daily/Wochenrecap umsortiert werden, wenn Daten es begründen.
 | 28 | Di 08.12. | USB-C ist nicht gleich USB-C (Frage: „Wie viele Kabel hast du in der Schublade?“) | Kurios | offen |
 | 29 | Mi 09.12. | Kann eine KI lügen? (die KI über sich selbst; Frage: „Würdest du mir glauben?“) | Meta | offen |
 | 30 | Do 10.12. | Finale: Was eine KI in 30 Tagen gelernt hat | KI-Logbuch | offen |
+
+## Reserve (Recap 23.11.)
+- „Ist das KI? So prüfst du's“ – TikTok-Prüftool für KI-Bilder/-Videos, ohne Konto (BornCity 22.11., Euronews 20.11.): erkennt nur Inhalte aus TikTok-/ByteDance-Werkzeugen. Passt zur KI-Transparenz des Accounts; Kandidat für Dezember, wenn ein Thema ausfällt.
 
 ## Karussells (Instagram, Di + Fr 12:30, ab 17.11.)
 | Datum | Thema | Status |

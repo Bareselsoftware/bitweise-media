@@ -87,15 +87,22 @@ Dieses Handbuch ist das Gedächtnis des Experiments. Jeder geplante Lauf liest e
 - Kette bricht (Push, URL, Metricool-Fehler): einmal sauber wiederholen, sonst nicht improvisieren – im Bericht mit ⚠️ melden und genau sagen, was fehlt.
 - Unsicher, ob ein Inhalt gegen Regeln oder Fakten verstößt: Post nicht anlegen, im Bericht nachfragen.
 
-## Laufendes Experiment: Einstieg (ab Tag 9, Do 19.11.; Tilman 17.11.)
-Befund bis Tag 6: Ø Wiedergabe bleibt bei ~6 s, auch im Format v3 → die ersten 2–3 s halten nicht. Vermutete Hauptursache: ruhige Stimme + stehende Grafik wirken wie ein Vortrag.
-Gilt für jedes Video ab Tag 9 (Tag 7 und 8 bleiben unverändert als Vergleich):
-1. **Sprechtempo schneller:** `say.__defaults__ = (0.82,)` (statt 0,9).
-2. **Erster Satz ≤ 6 Wörter**, der Kern der Spannung (z. B. „Dein Handy hört mit?“). Erklärung erst im zweiten Satz.
-3. **Bewegung in Sekunde 0–1:** Stock-Nahaufnahme mit Zoom-Punch (`punch(img, t)` aus stil.py) statt stehender Zahl. Hook-Text erscheint trotzdem ab Frame 0. **Kein Ton-Akzent** (kein `sfx` in `build()`) – Tilman 21.11.: Whoosh klang wie Pusten ins Mikrofon, ab Tag 12 weglassen.
-Auswertung im Wochenrecap 23.11.: Ø Wiedergabe und Views Tag 9–12 vs. Tag 6–8 (TikTok). Erfolg = Ø Wiedergabe ≥ 9 s oder deutlich mehr Views; sonst nächster Hebel (Themenwahl, Uhrzeit, Stimme ersetzen).
+## Laufendes Experiment: Mitmach-Einstieg (ab Tag 14, Di 24.11.; Wochenrecap 23.11.)
+Befund bis Tag 11: Die zwei Videos mit Mitmach-Moment (Tag 8 Passwort-Countdown, Tag 11 „Gehört der Mast zur Ampel?“) halten 10 s Ø Wiedergabe, alle anderen 3–6 s (n = 2 → nur Hinweis, kein Beweis).
+Gilt für jedes Video ab Tag 14:
+1. **In Sekunde 0–5 eine Rate- oder Entscheidungsfrage** mit 2–3 sichtbaren Antwortoptionen (z. B. „Echter Rabatt oder Trick?“), danach **3-s-Countdown** (wie Tag 8), erst dann die Auflösung. Auch Mythos-Checks so umbauen („Ja oder nein? 3 – 2 – 1“).
+2. Alles andere bleibt (Sprechtempo 0,82, Hook-Satz ≤ 6 Wörter, Bewegung in Sek. 0–1, kein Ton-Akzent).
+Auswertung im Wochenrecap 30.11.: Ø Wiedergabe und Komplett-Quote der Mitmach-Videos vs. Tag 6–12. Erfolg = Ø Wiedergabe ≥ 9 s bei mind. 2 von 3 Videos.
+
+### Abgeschlossen: Experiment Einstieg (Tag 9–12)
+Ergebnis (Daten Tag 9–11; Tag 12 lieferte Metricool noch nicht): Ø Wiedergabe 5,7 s vs. 6,3 s bei Tag 6–8, Views Ø 327 vs. 260 (+26 %, n = 3). Ziel ≥ 9 s **nicht erreicht**. Einstellungen bleiben als Standard (kein Schaden erkennbar), nächster Hebel = Mitmach-Einstieg (s. o.).
 
 ## Änderungsprotokoll
+- 23.11.2026 – **Wochenrecap 2** (Daten Tag 6–11 vs. Tag 1–5, nur TikTok; kleine Zahlen → geringe Aussagekraft):
+  1. **Tag 14 ↔ Tag 16 getauscht: Black Friday kommt am Di 24.11.** Daten: Tag 14 ist der letzte freie Metricool-Slot im November (19/20 belegt); Black Friday ist Fr 27.11. (Verbraucherzentrale SH, 19.11.); das einzige Video mit mehreren Shares war das aktuelle Warn-Thema Tag 10 (3 Shares). Inhalt nach Verbraucherzentrale SH/Netzwelt: Rabatt oft gegen UVP gerechnet → Preisverlauf/Preisvergleich prüfen; Countdown-Druck ignorieren; Fakeshop-Finder; nicht per Vorkasse zahlen. TikTok-Algorithmus-Thema rückt auf Tag 16.
+  2. **Budget-Plan für 25.–30.11.:** Ohne Metricool-Bezahlplan bis Di 24.11. 19:42 werden Tag 15–20 **nicht** angelegt (Pause, im Daily mit ⚠️ melden). Ab Di 01.12. (Tag 21) wieder täglich nur TikTok – 20 Slots reichen für Tag 21–30. Kommt der Bezahlplan, läuft alles normal weiter (dann auch wieder IG + TikTok).
+  3. **Experiment Einstieg beendet, Mitmach-Einstieg als neues Experiment** (s. „Laufendes Experiment“). Daten: Tag 8 + 11 (Mitmach) 10 s Ø Wiedergabe, übrige Videos Ø 4,4 s; Experiment Einstieg 5,7 s statt Ziel ≥ 9 s.
+  - Posting-Zeit 18:00 bleibt: Metricool-Zeitindex TikTok hat 18 Uhr an Mo–Do als Bestwert, Fr–So gleichauf mit 10 Uhr. Das 18-Uhr-Experiment aus Woche 2 ist nicht auswertbar (fällt mit Format-Wechsel Tag 6 zusammen).
 - 21.11.2026 – Tilman: Ton-Akzent in Sekunde 0 ab Tag 12 weglassen (kein `sfx`). „Bot“ wird jetzt „Bott“ gesprochen (`AUSSPRACHE_WORT`).
 - 16.11.2026 – **Wochenrecap 1** (Daten Tag 1–4; Tag 5 lieferte Metricool noch nicht; kleine Zahlen → geringe Aussagekraft):
   1. **TikTok vor Instagram, solange das Budget knapp ist.** Daten: TikTok Ø 796 Views, 5 Follower; Instagram Ø 67 Views, 0 Follower. Das Budget ist mit Tag 10 bei 20/20. → Ab Tag 7 nur TikTok, solange kein Metricool-Bezahlplan aktiv ist (8 freie Slots = Tag 7–14 statt 7–10). Mit Bezahlplan wieder IG + TikTok. Tilman kann das per „veto“ zurücknehmen.
