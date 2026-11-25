@@ -54,3 +54,8 @@ Alle Fotos/Videos von Pixabay (Pixabay Content License), echte Aufnahmen, Upload
 - video #14900 (2018) von cipnt: https://pixabay.com/videos/id-14900/
 - video #9490 (2017) von chayka1270: https://pixabay.com/videos/id-9490/
 - video #38057 (2020) von Engin_Akyurt: https://pixabay.com/videos/id-38057/
+## Tag 16 – Rate mal: Woher weiß TikTok, was dir gefällt?
+- video #64595 (2021) von Josh_Malic: https://pixabay.com/videos/id-64595/
+- video #79154 (2021) von Kathanhero: https://pixabay.com/videos/id-79154/
+- video #44859 (2020) von FlorenceCdeM: https://pixabay.com/videos/id-44859/
+- video #38084 (2020) von mephala1980: https://pixabay.com/videos/id-38084/
