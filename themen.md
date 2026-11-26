@@ -22,7 +22,7 @@ Darf vom Daily/Wochenrecap umsortiert werden, wenn Daten es begründen.
 | 14 | Di 24.11. | Rate mal: Black Friday „-50 %“ – echter Rabatt oder Trick? (Recap 23.11.: vorgezogen, letzter Nov-Slot; Rabatt oft gegen UVP gerechnet → Preisverlauf/Vergleich prüfen, Countdown-Druck ignorieren, keine Vorkasse; Quelle Verbraucherzentrale SH 19.11.; Mitmach-Einstieg mit Countdown; „Speicher dir das“) | Rate mal | erstellt |
 | 15 | Mi 25.11. | Bringt ein VPN wirklich Anonymität? (Frage: „Nutzt du eins? Ja/Nein“) | Mythos-Check | erstellt (Tilman lädt selbst auf TikTok hoch) |
 | 16 | Do 26.11. | Woher weiß TikTok, was dir gefällt? (Frage: „Was zeigt dir deine For You gerade?“; nur mit Bezahlplan, sonst entfällt → als Rate mal mit Mitmach-Einstieg gebaut, für manuellen Upload) | Kurios | erstellt (manueller Upload möglich) |
-| 17 | Fr 27.11. | Ist eine gelöschte Datei wirklich weg? | Mythos-Check | offen |
+| 17 | Fr 27.11. | Ist eine gelöschte Datei wirklich weg? (umgesetzt als „Gelöscht ist gelöscht. Oder?“ mit Ja/Nein-Countdown; Frage: „Schon mal was aus Versehen gelöscht?“) | Mythos-Check | erstellt (manueller Upload möglich) |
 | 18 | Sa 28.11. | Warum Fotos vom Bildschirm Streifen haben (Moiré) | Kurios | offen |
 | 19 | So 29.11. | Rate mal: Was frisst am meisten Datenvolumen? (Video, Musik, Insta, WhatsApp) | Rate mal | offen |
 | 20 | Mo 30.11. | KI-Logbuch #3 | KI-Logbuch | offen |

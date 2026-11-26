@@ -59,3 +59,8 @@ Alle Fotos/Videos von Pixabay (Pixabay Content License), echte Aufnahmen, Upload
 - video #79154 (2021) von Kathanhero: https://pixabay.com/videos/id-79154/
 - video #44859 (2020) von FlorenceCdeM: https://pixabay.com/videos/id-44859/
 - video #38084 (2020) von mephala1980: https://pixabay.com/videos/id-38084/
+## Tag 17 – Mythos-Check: Gelöscht ist gelöscht?
+- video #43559 (2020) von PhotoDhaba: https://pixabay.com/videos/id-43559/
+- video #3176 (2016) von Coverr-Free-Footage: https://pixabay.com/videos/id-3176/
+- video #73328 (2021) von MarandaP: https://pixabay.com/videos/id-73328/
+- video #736 (2015) von elchao: https://pixabay.com/videos/id-736/
