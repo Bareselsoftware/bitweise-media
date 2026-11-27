@@ -23,7 +23,7 @@ Darf vom Daily/Wochenrecap umsortiert werden, wenn Daten es begründen.
 | 15 | Mi 25.11. | Bringt ein VPN wirklich Anonymität? (Frage: „Nutzt du eins? Ja/Nein“) | Mythos-Check | erstellt (Tilman lädt selbst auf TikTok hoch) |
 | 16 | Do 26.11. | Woher weiß TikTok, was dir gefällt? (Frage: „Was zeigt dir deine For You gerade?“; nur mit Bezahlplan, sonst entfällt → als Rate mal mit Mitmach-Einstieg gebaut, für manuellen Upload) | Kurios | erstellt (manueller Upload möglich) |
 | 17 | Fr 27.11. | Ist eine gelöschte Datei wirklich weg? (umgesetzt als „Gelöscht ist gelöscht. Oder?“ mit Ja/Nein-Countdown; Frage: „Schon mal was aus Versehen gelöscht?“) | Mythos-Check | erstellt (manueller Upload möglich) |
-| 18 | Sa 28.11. | Warum Fotos vom Bildschirm Streifen haben (Moiré) | Kurios | offen |
+| 18 | Sa 28.11. | Warum Fotos vom Bildschirm Streifen haben (Moiré) (umgesetzt als Rate mal A/B/C mit Countdown; Frage: „Team Screenshot oder Team Foto?“) | Kurios | erstellt (manueller Upload möglich) |
 | 19 | So 29.11. | Rate mal: Was frisst am meisten Datenvolumen? (Video, Musik, Insta, WhatsApp) | Rate mal | offen |
 | 20 | Mo 30.11. | KI-Logbuch #3 | KI-Logbuch | offen |
 | 21 | Di 01.12. | Machen Updates dein Handy langsam? | Mythos-Check | offen |

@@ -64,3 +64,7 @@ Alle Fotos/Videos von Pixabay (Pixabay Content License), echte Aufnahmen, Upload
 - video #3176 (2016) von Coverr-Free-Footage: https://pixabay.com/videos/id-3176/
 - video #73328 (2021) von MarandaP: https://pixabay.com/videos/id-73328/
 - video #736 (2015) von elchao: https://pixabay.com/videos/id-736/
+## Tag 18 – Kurios: Warum Fotos vom Bildschirm Streifen haben
+- video #8255 (2017) von Coverr-Free-Footage: https://pixabay.com/videos/id-8255/
+- photo #3358312 (2018) von SuKaduna: https://pixabay.com/photos/led-pixel-display-digital-3358312/
+- video #736 (2015) von elchao: https://pixabay.com/videos/id-736/
